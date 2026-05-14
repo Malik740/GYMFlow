@@ -47,7 +47,7 @@ Partial Class Login
         ' 
         ' grblog
         ' 
-        grblog.BackColor = Color.Transparent
+        grblog.BackColor = Color.White
         grblog.Controls.Add(lblchangpass)
         grblog.Controls.Add(btnlog)
         grblog.Controls.Add(TextBox2)

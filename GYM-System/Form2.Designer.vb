@@ -47,7 +47,7 @@ Partial Class Form2
         ' 
         ' TextBox1
         ' 
-        TextBox1.BackColor = Color.DimGray
+        TextBox1.BackColor = Color.WhiteSmoke
         TextBox1.BorderStyle = BorderStyle.FixedSingle
         TextBox1.Location = New Point(447, 87)
         TextBox1.Name = "TextBox1"
@@ -56,7 +56,7 @@ Partial Class Form2
         ' 
         ' TextBox2
         ' 
-        TextBox2.BackColor = SystemColors.WindowFrame
+        TextBox2.BackColor = Color.WhiteSmoke
         TextBox2.BorderStyle = BorderStyle.FixedSingle
         TextBox2.Location = New Point(447, 197)
         TextBox2.Name = "TextBox2"
@@ -65,7 +65,7 @@ Partial Class Form2
         ' 
         ' TextBox3
         ' 
-        TextBox3.BackColor = SystemColors.WindowFrame
+        TextBox3.BackColor = Color.WhiteSmoke
         TextBox3.BorderStyle = BorderStyle.FixedSingle
         TextBox3.Location = New Point(447, 160)
         TextBox3.Name = "TextBox3"
@@ -74,7 +74,7 @@ Partial Class Form2
         ' 
         ' TextBox4
         ' 
-        TextBox4.BackColor = SystemColors.WindowFrame
+        TextBox4.BackColor = Color.WhiteSmoke
         TextBox4.BorderStyle = BorderStyle.FixedSingle
         TextBox4.Location = New Point(447, 123)
         TextBox4.Name = "TextBox4"
@@ -84,7 +84,7 @@ Partial Class Form2
         ' lblFname
         ' 
         lblFname.AutoSize = True
-        lblFname.BackColor = Color.DimGray
+        lblFname.BackColor = Color.Transparent
         lblFname.Location = New Point(347, 90)
         lblFname.Name = "lblFname"
         lblFname.Size = New Size(64, 15)
