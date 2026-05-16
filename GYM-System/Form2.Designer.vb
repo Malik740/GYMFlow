@@ -78,11 +78,11 @@ Partial Class Form2
         ' 
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Segoe UI", 12.0F)
+        Label3.Font = New Font("Segoe UI", 11.0F)
         Label3.ForeColor = Color.DimGray
         Label3.Location = New Point(383, 58)
         Label3.Name = "Label3"
-        Label3.Size = New Size(163, 21)
+        Label3.Size = New Size(154, 20)
         Label3.TabIndex = 2
         Label3.Text = "Register new member"
         ' 
@@ -196,7 +196,7 @@ Partial Class Form2
         ' 
         ' txtfullname
         ' 
-        txtfullname.BackColor = Color.FromArgb(24, 24, 24)
+        txtfullname.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         txtfullname.BorderStyle = BorderStyle.FixedSingle
         txtfullname.ForeColor = SystemColors.Info
         txtfullname.Location = New Point(510, 98)
@@ -270,7 +270,7 @@ Partial Class Form2
         ' 
         ' mskphone
         ' 
-        mskphone.BackColor = Color.FromArgb(24, 24, 24)
+        mskphone.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         mskphone.BorderStyle = BorderStyle.None
         mskphone.ForeColor = SystemColors.Info
         mskphone.Location = New Point(510, 220)
@@ -282,7 +282,7 @@ Partial Class Form2
         ' 
         ' txtemail
         ' 
-        txtemail.BackColor = Color.FromArgb(24, 24, 24)
+        txtemail.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         txtemail.BorderStyle = BorderStyle.None
         txtemail.ForeColor = SystemColors.Info
         txtemail.Location = New Point(510, 257)
@@ -293,7 +293,7 @@ Partial Class Form2
         ' 
         ' txtlocation
         ' 
-        txtlocation.BackColor = Color.FromArgb(24, 24, 24)
+        txtlocation.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         txtlocation.BorderStyle = BorderStyle.None
         txtlocation.ForeColor = SystemColors.Info
         txtlocation.Location = New Point(508, 295)
@@ -304,7 +304,7 @@ Partial Class Form2
         ' 
         ' cmbplan
         ' 
-        cmbplan.BackColor = Color.FromArgb(24, 24, 24)
+        cmbplan.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         cmbplan.FlatStyle = FlatStyle.Flat
         cmbplan.FormattingEnabled = True
         cmbplan.Location = New Point(508, 323)
@@ -314,7 +314,7 @@ Partial Class Form2
         ' 
         ' txtfee
         ' 
-        txtfee.BackColor = Color.FromArgb(24, 24, 24)
+        txtfee.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         txtfee.BorderStyle = BorderStyle.None
         txtfee.ForeColor = SystemColors.Info
         txtfee.Location = New Point(508, 372)
@@ -325,7 +325,7 @@ Partial Class Form2
         ' 
         ' txtnote
         ' 
-        txtnote.BackColor = Color.FromArgb(24, 24, 24)
+        txtnote.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         txtnote.BorderStyle = BorderStyle.None
         txtnote.ForeColor = SystemColors.Info
         txtnote.Location = New Point(508, 411)
@@ -338,7 +338,7 @@ Partial Class Form2
         ' btnsavemember
         ' 
         btnsavemember.BackColor = Color.LimeGreen
-        btnsavemember.FlatAppearance.BorderColor = Color.FromArgb(32, 219, 69)
+        btnsavemember.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(219), CByte(69))
         btnsavemember.FlatStyle = FlatStyle.Flat
         btnsavemember.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
         btnsavemember.ForeColor = Color.White
@@ -351,8 +351,8 @@ Partial Class Form2
         ' 
         ' btnreset
         ' 
-        btnreset.BackColor = Color.FromArgb(24, 24, 24)
-        btnreset.FlatAppearance.BorderColor = Color.FromArgb(32, 219, 69)
+        btnreset.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        btnreset.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(219), CByte(69))
         btnreset.FlatStyle = FlatStyle.Flat
         btnreset.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
         btnreset.ForeColor = Color.White
