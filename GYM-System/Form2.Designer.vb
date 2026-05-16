@@ -22,133 +22,413 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
-        PictureBox1 = New PictureBox()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
-        TextBox3 = New TextBox()
-        TextBox4 = New TextBox()
-        lblFname = New Label()
+        Label1 = New Label()
         Label2 = New Label()
-        lblPhoneNO = New Label()
         Label3 = New Label()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        lblfullname = New Label()
+        lblgender = New Label()
+        lbldate = New Label()
+        lblphone = New Label()
+        lblemail = New Label()
+        lbllocation = New Label()
+        lblplan = New Label()
+        lblfee = New Label()
+        lblnote = New Label()
+        txtfullname = New TextBox()
+        rdbmale = New RadioButton()
+        rdbfemale = New RadioButton()
+        Label4 = New Label()
+        Label5 = New Label()
+        dtpBirthDate = New DateTimePicker()
+        mskphone = New MaskedTextBox()
+        txtemail = New TextBox()
+        txtlocation = New TextBox()
+        cmbplan = New ComboBox()
+        txtfee = New TextBox()
+        txtnote = New TextBox()
+        btnsavemember = New Button()
+        btnreset = New Button()
         SuspendLayout()
         ' 
-        ' PictureBox1
+        ' Label1
         ' 
-        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(-4, -1)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(801, 449)
-        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox1.TabIndex = 0
-        PictureBox1.TabStop = False
-        ' 
-        ' TextBox1
-        ' 
-        TextBox1.BackColor = Color.WhiteSmoke
-        TextBox1.BorderStyle = BorderStyle.FixedSingle
-        TextBox1.Location = New Point(447, 87)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(164, 23)
-        TextBox1.TabIndex = 1
-        ' 
-        ' TextBox2
-        ' 
-        TextBox2.BackColor = Color.WhiteSmoke
-        TextBox2.BorderStyle = BorderStyle.FixedSingle
-        TextBox2.Location = New Point(447, 197)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(164, 23)
-        TextBox2.TabIndex = 2
-        ' 
-        ' TextBox3
-        ' 
-        TextBox3.BackColor = Color.WhiteSmoke
-        TextBox3.BorderStyle = BorderStyle.FixedSingle
-        TextBox3.Location = New Point(447, 160)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(164, 23)
-        TextBox3.TabIndex = 3
-        ' 
-        ' TextBox4
-        ' 
-        TextBox4.BackColor = Color.WhiteSmoke
-        TextBox4.BorderStyle = BorderStyle.FixedSingle
-        TextBox4.Location = New Point(447, 123)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(164, 23)
-        TextBox4.TabIndex = 4
-        ' 
-        ' lblFname
-        ' 
-        lblFname.AutoSize = True
-        lblFname.BackColor = Color.Transparent
-        lblFname.Location = New Point(347, 90)
-        lblFname.Name = "lblFname"
-        lblFname.Size = New Size(64, 15)
-        lblFname.TabIndex = 5
-        lblFname.Text = "First Name"
+        Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Segoe UI", 20.0F, FontStyle.Bold)
+        Label1.ForeColor = Color.White
+        Label1.Location = New Point(383, 21)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(179, 37)
+        Label1.TabIndex = 0
+        Label1.Text = "ADD PEOPLE"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.BackColor = Color.DimGray
-        Label2.Location = New Point(347, 126)
+        Label2.BackColor = Color.Transparent
+        Label2.Font = New Font("Segoe UI", 20.0F, FontStyle.Bold)
+        Label2.ForeColor = Color.LimeGreen
+        Label2.Location = New Point(557, 21)
         Label2.Name = "Label2"
-        Label2.Size = New Size(60, 15)
-        Label2.TabIndex = 6
-        Label2.Text = "LastName"
-        ' 
-        ' lblPhoneNO
-        ' 
-        lblPhoneNO.AutoSize = True
-        lblPhoneNO.BackColor = Color.DimGray
-        lblPhoneNO.Location = New Point(347, 163)
-        lblPhoneNO.Name = "lblPhoneNO"
-        lblPhoneNO.Size = New Size(85, 15)
-        lblPhoneNO.TabIndex = 7
-        lblPhoneNO.Text = "PhoneNumber"
+        Label2.Size = New Size(120, 37)
+        Label2.TabIndex = 1
+        Label2.Text = "TO GYM"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.BackColor = Color.DimGray
-        Label3.Location = New Point(357, 199)
+        Label3.BackColor = Color.Transparent
+        Label3.Font = New Font("Segoe UI", 12.0F)
+        Label3.ForeColor = Color.DimGray
+        Label3.Location = New Point(383, 58)
         Label3.Name = "Label3"
-        Label3.Size = New Size(36, 15)
-        Label3.TabIndex = 9
-        Label3.Text = "Email"
+        Label3.Size = New Size(163, 21)
+        Label3.TabIndex = 2
+        Label3.Text = "Register new member"
+        ' 
+        ' lblfullname
+        ' 
+        lblfullname.AutoSize = True
+        lblfullname.BackColor = Color.Transparent
+        lblfullname.Font = New Font("Arial", 9.0F, FontStyle.Bold)
+        lblfullname.ForeColor = Color.White
+        lblfullname.Location = New Point(396, 105)
+        lblfullname.Name = "lblfullname"
+        lblfullname.Size = New Size(62, 15)
+        lblfullname.TabIndex = 3
+        lblfullname.Text = "Full Name"
+        ' 
+        ' lblgender
+        ' 
+        lblgender.AutoSize = True
+        lblgender.BackColor = Color.Transparent
+        lblgender.Font = New Font("Arial", 9.0F, FontStyle.Bold)
+        lblgender.ForeColor = Color.White
+        lblgender.Location = New Point(396, 144)
+        lblgender.Name = "lblgender"
+        lblgender.Size = New Size(48, 15)
+        lblgender.TabIndex = 4
+        lblgender.Text = "Gender"
+        ' 
+        ' lbldate
+        ' 
+        lbldate.AutoSize = True
+        lbldate.BackColor = Color.Transparent
+        lbldate.Font = New Font("Arial", 9.0F, FontStyle.Bold)
+        lbldate.ForeColor = Color.White
+        lbldate.Location = New Point(396, 182)
+        lbldate.Name = "lbldate"
+        lbldate.Size = New Size(77, 15)
+        lbldate.TabIndex = 5
+        lbldate.Text = "Date of Birth"
+        ' 
+        ' lblphone
+        ' 
+        lblphone.AutoSize = True
+        lblphone.BackColor = Color.Transparent
+        lblphone.Font = New Font("Arial", 9.0F, FontStyle.Bold)
+        lblphone.ForeColor = Color.White
+        lblphone.Location = New Point(396, 220)
+        lblphone.Name = "lblphone"
+        lblphone.Size = New Size(91, 15)
+        lblphone.TabIndex = 6
+        lblphone.Text = "Phone Number"
+        ' 
+        ' lblemail
+        ' 
+        lblemail.AutoSize = True
+        lblemail.BackColor = Color.Transparent
+        lblemail.Font = New Font("Arial", 9.0F, FontStyle.Bold)
+        lblemail.ForeColor = Color.White
+        lblemail.Location = New Point(396, 257)
+        lblemail.Name = "lblemail"
+        lblemail.Size = New Size(38, 15)
+        lblemail.TabIndex = 7
+        lblemail.Text = "Email"
+        ' 
+        ' lbllocation
+        ' 
+        lbllocation.AutoSize = True
+        lbllocation.BackColor = Color.Transparent
+        lbllocation.Font = New Font("Arial", 9.0F, FontStyle.Bold)
+        lbllocation.ForeColor = Color.White
+        lbllocation.Location = New Point(396, 295)
+        lbllocation.Name = "lbllocation"
+        lbllocation.Size = New Size(56, 15)
+        lbllocation.TabIndex = 8
+        lbllocation.Text = "Location"
+        ' 
+        ' lblplan
+        ' 
+        lblplan.AutoSize = True
+        lblplan.BackColor = Color.Transparent
+        lblplan.Font = New Font("Arial", 9.0F, FontStyle.Bold)
+        lblplan.ForeColor = Color.White
+        lblplan.Location = New Point(396, 331)
+        lblplan.Name = "lblplan"
+        lblplan.Size = New Size(107, 15)
+        lblplan.TabIndex = 9
+        lblplan.Text = "MemberShip Plan"
+        ' 
+        ' lblfee
+        ' 
+        lblfee.AutoSize = True
+        lblfee.BackColor = Color.Transparent
+        lblfee.Font = New Font("Arial", 9.0F, FontStyle.Bold)
+        lblfee.ForeColor = Color.White
+        lblfee.Location = New Point(396, 373)
+        lblfee.Name = "lblfee"
+        lblfee.Size = New Size(99, 15)
+        lblfee.TabIndex = 10
+        lblfee.Text = "Registration Fee"
+        ' 
+        ' lblnote
+        ' 
+        lblnote.AutoSize = True
+        lblnote.BackColor = Color.Transparent
+        lblnote.Font = New Font("Arial", 9.0F, FontStyle.Bold)
+        lblnote.ForeColor = Color.White
+        lblnote.Location = New Point(396, 411)
+        lblnote.Name = "lblnote"
+        lblnote.Size = New Size(89, 15)
+        lblnote.TabIndex = 11
+        lblnote.Text = "Note (optional)"
+        ' 
+        ' txtfullname
+        ' 
+        txtfullname.BackColor = Color.FromArgb(24, 24, 24)
+        txtfullname.BorderStyle = BorderStyle.FixedSingle
+        txtfullname.ForeColor = SystemColors.Info
+        txtfullname.Location = New Point(510, 98)
+        txtfullname.Multiline = True
+        txtfullname.Name = "txtfullname"
+        txtfullname.PlaceholderText = "Enter full name"
+        txtfullname.Size = New Size(198, 23)
+        txtfullname.TabIndex = 12
+        ' 
+        ' rdbmale
+        ' 
+        rdbmale.BackColor = Color.Transparent
+        rdbmale.Checked = True
+        rdbmale.FlatStyle = FlatStyle.System
+        rdbmale.Font = New Font("Segoe UI", 11.0F)
+        rdbmale.ForeColor = Color.White
+        rdbmale.Location = New Point(508, 138)
+        rdbmale.Name = "rdbmale"
+        rdbmale.Size = New Size(66, 25)
+        rdbmale.TabIndex = 13
+        rdbmale.TabStop = True
+        rdbmale.TextAlign = ContentAlignment.MiddleCenter
+        rdbmale.UseVisualStyleBackColor = False
+        ' 
+        ' rdbfemale
+        ' 
+        rdbfemale.BackColor = Color.Transparent
+        rdbfemale.FlatStyle = FlatStyle.System
+        rdbfemale.Font = New Font("Segoe UI", 11.0F)
+        rdbfemale.ForeColor = Color.White
+        rdbfemale.Location = New Point(627, 140)
+        rdbfemale.Name = "rdbfemale"
+        rdbfemale.Size = New Size(81, 25)
+        rdbfemale.TabIndex = 14
+        rdbfemale.TextAlign = ContentAlignment.MiddleCenter
+        rdbfemale.UseVisualStyleBackColor = False
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.BackColor = Color.Transparent
+        Label4.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        Label4.Location = New Point(532, 141)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(42, 19)
+        Label4.TabIndex = 15
+        Label4.Text = "Male"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.BackColor = Color.Transparent
+        Label5.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold)
+        Label5.Location = New Point(649, 141)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(59, 20)
+        Label5.TabIndex = 16
+        Label5.Text = "Female"
+        ' 
+        ' dtpBirthDate
+        ' 
+        dtpBirthDate.CalendarForeColor = Color.Transparent
+        dtpBirthDate.CalendarMonthBackground = Color.Transparent
+        dtpBirthDate.CalendarTitleBackColor = Color.Transparent
+        dtpBirthDate.CalendarTitleForeColor = Color.Transparent
+        dtpBirthDate.CalendarTrailingForeColor = Color.Transparent
+        dtpBirthDate.Location = New Point(510, 175)
+        dtpBirthDate.Name = "dtpBirthDate"
+        dtpBirthDate.Size = New Size(200, 23)
+        dtpBirthDate.TabIndex = 17
+        ' 
+        ' mskphone
+        ' 
+        mskphone.BackColor = Color.FromArgb(24, 24, 24)
+        mskphone.BorderStyle = BorderStyle.None
+        mskphone.ForeColor = SystemColors.Info
+        mskphone.Location = New Point(510, 220)
+        mskphone.Mask = "000-000-0000"
+        mskphone.Name = "mskphone"
+        mskphone.Size = New Size(202, 16)
+        mskphone.TabIndex = 18
+        mskphone.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' txtemail
+        ' 
+        txtemail.BackColor = Color.FromArgb(24, 24, 24)
+        txtemail.BorderStyle = BorderStyle.None
+        txtemail.ForeColor = SystemColors.Info
+        txtemail.Location = New Point(510, 257)
+        txtemail.Name = "txtemail"
+        txtemail.PlaceholderText = "Enter the Email"
+        txtemail.Size = New Size(200, 16)
+        txtemail.TabIndex = 19
+        ' 
+        ' txtlocation
+        ' 
+        txtlocation.BackColor = Color.FromArgb(24, 24, 24)
+        txtlocation.BorderStyle = BorderStyle.None
+        txtlocation.ForeColor = SystemColors.Info
+        txtlocation.Location = New Point(508, 295)
+        txtlocation.Name = "txtlocation"
+        txtlocation.PlaceholderText = "Enter the Location"
+        txtlocation.Size = New Size(200, 16)
+        txtlocation.TabIndex = 20
+        ' 
+        ' cmbplan
+        ' 
+        cmbplan.BackColor = Color.FromArgb(24, 24, 24)
+        cmbplan.FlatStyle = FlatStyle.Flat
+        cmbplan.FormattingEnabled = True
+        cmbplan.Location = New Point(508, 323)
+        cmbplan.Name = "cmbplan"
+        cmbplan.Size = New Size(202, 23)
+        cmbplan.TabIndex = 21
+        ' 
+        ' txtfee
+        ' 
+        txtfee.BackColor = Color.FromArgb(24, 24, 24)
+        txtfee.BorderStyle = BorderStyle.None
+        txtfee.ForeColor = SystemColors.Info
+        txtfee.Location = New Point(508, 372)
+        txtfee.Name = "txtfee"
+        txtfee.PlaceholderText = "Enter the Regetration Fee"
+        txtfee.Size = New Size(200, 16)
+        txtfee.TabIndex = 22
+        ' 
+        ' txtnote
+        ' 
+        txtnote.BackColor = Color.FromArgb(24, 24, 24)
+        txtnote.BorderStyle = BorderStyle.None
+        txtnote.ForeColor = SystemColors.Info
+        txtnote.Location = New Point(508, 411)
+        txtnote.Multiline = True
+        txtnote.Name = "txtnote"
+        txtnote.PlaceholderText = "Add any additional notes..."
+        txtnote.Size = New Size(200, 40)
+        txtnote.TabIndex = 23
+        ' 
+        ' btnsavemember
+        ' 
+        btnsavemember.BackColor = Color.LimeGreen
+        btnsavemember.FlatAppearance.BorderColor = Color.FromArgb(32, 219, 69)
+        btnsavemember.FlatStyle = FlatStyle.Flat
+        btnsavemember.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        btnsavemember.ForeColor = Color.White
+        btnsavemember.Location = New Point(587, 468)
+        btnsavemember.Name = "btnsavemember"
+        btnsavemember.Size = New Size(132, 29)
+        btnsavemember.TabIndex = 24
+        btnsavemember.Text = "Save Member"
+        btnsavemember.UseVisualStyleBackColor = False
+        ' 
+        ' btnreset
+        ' 
+        btnreset.BackColor = Color.FromArgb(24, 24, 24)
+        btnreset.FlatAppearance.BorderColor = Color.FromArgb(32, 219, 69)
+        btnreset.FlatStyle = FlatStyle.Flat
+        btnreset.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        btnreset.ForeColor = Color.White
+        btnreset.Location = New Point(433, 468)
+        btnreset.Name = "btnreset"
+        btnreset.Size = New Size(104, 29)
+        btnreset.TabIndex = 25
+        btnreset.Text = "Reset"
+        btnreset.UseVisualStyleBackColor = False
         ' 
         ' Form2
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        BackgroundImage = My.Resources.Resources.Add_People_Form__2_
+        BackgroundImageLayout = ImageLayout.Stretch
+        ClientSize = New Size(882, 531)
+        Controls.Add(btnreset)
+        Controls.Add(btnsavemember)
+        Controls.Add(txtnote)
+        Controls.Add(txtfee)
+        Controls.Add(cmbplan)
+        Controls.Add(txtlocation)
+        Controls.Add(txtemail)
+        Controls.Add(mskphone)
+        Controls.Add(dtpBirthDate)
+        Controls.Add(Label5)
+        Controls.Add(Label4)
+        Controls.Add(rdbfemale)
+        Controls.Add(rdbmale)
+        Controls.Add(txtfullname)
+        Controls.Add(lblnote)
+        Controls.Add(lblfee)
+        Controls.Add(lblplan)
+        Controls.Add(lbllocation)
+        Controls.Add(lblemail)
+        Controls.Add(lblphone)
+        Controls.Add(lbldate)
+        Controls.Add(lblgender)
+        Controls.Add(lblfullname)
         Controls.Add(Label3)
-        Controls.Add(lblPhoneNO)
         Controls.Add(Label2)
-        Controls.Add(lblFname)
-        Controls.Add(TextBox4)
-        Controls.Add(TextBox3)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
-        Controls.Add(PictureBox1)
+        Controls.Add(Label1)
+        DoubleBuffered = True
+        ForeColor = SystemColors.ControlLightLight
+        FormBorderStyle = FormBorderStyle.FixedSingle
         Name = "Form2"
         Text = "Form2"
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents lblFname As Label
+    Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents lblPhoneNO As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents lblfullname As Label
+    Friend WithEvents lblgender As Label
+    Friend WithEvents lbldate As Label
+    Friend WithEvents lblphone As Label
+    Friend WithEvents lblemail As Label
+    Friend WithEvents lbllocation As Label
+    Friend WithEvents lblplan As Label
+    Friend WithEvents lblfee As Label
+    Friend WithEvents lblnote As Label
+    Friend WithEvents txtfullname As TextBox
+    Friend WithEvents rdbmale As RadioButton
+    Friend WithEvents rdbfemale As RadioButton
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents dtpBirthDate As DateTimePicker
+    Friend WithEvents mskphone As MaskedTextBox
+    Friend WithEvents txtemail As TextBox
+    Friend WithEvents txtlocation As TextBox
+    Friend WithEvents cmbplan As ComboBox
+    Friend WithEvents txtfee As TextBox
+    Friend WithEvents txtnote As TextBox
+    Friend WithEvents btnsavemember As Button
+    Friend WithEvents btnreset As Button
 End Class
