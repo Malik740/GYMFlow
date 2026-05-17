@@ -54,21 +54,21 @@ Partial Class Form2
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Segoe UI", 20.0F, FontStyle.Bold)
+        Label1.Font = New Font("Segoe UI", 20F, FontStyle.Bold)
         Label1.ForeColor = Color.White
         Label1.Location = New Point(383, 21)
         Label1.Name = "Label1"
-        Label1.Size = New Size(179, 37)
+        Label1.Size = New Size(141, 37)
         Label1.TabIndex = 0
-        Label1.Text = "ADD PEOPLE"
+        Label1.Text = "ADD User"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Segoe UI", 20.0F, FontStyle.Bold)
+        Label2.Font = New Font("Segoe UI", 20F, FontStyle.Bold)
         Label2.ForeColor = Color.LimeGreen
-        Label2.Location = New Point(557, 21)
+        Label2.Location = New Point(530, 21)
         Label2.Name = "Label2"
         Label2.Size = New Size(120, 37)
         Label2.TabIndex = 1
@@ -78,7 +78,7 @@ Partial Class Form2
         ' 
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Segoe UI", 11.0F)
+        Label3.Font = New Font("Segoe UI", 11F)
         Label3.ForeColor = Color.DimGray
         Label3.Location = New Point(383, 58)
         Label3.Name = "Label3"
@@ -90,7 +90,7 @@ Partial Class Form2
         ' 
         lblfullname.AutoSize = True
         lblfullname.BackColor = Color.Transparent
-        lblfullname.Font = New Font("Arial", 9.0F, FontStyle.Bold)
+        lblfullname.Font = New Font("Arial", 9F, FontStyle.Bold)
         lblfullname.ForeColor = Color.White
         lblfullname.Location = New Point(396, 105)
         lblfullname.Name = "lblfullname"
@@ -102,7 +102,7 @@ Partial Class Form2
         ' 
         lblgender.AutoSize = True
         lblgender.BackColor = Color.Transparent
-        lblgender.Font = New Font("Arial", 9.0F, FontStyle.Bold)
+        lblgender.Font = New Font("Arial", 9F, FontStyle.Bold)
         lblgender.ForeColor = Color.White
         lblgender.Location = New Point(396, 144)
         lblgender.Name = "lblgender"
@@ -114,7 +114,7 @@ Partial Class Form2
         ' 
         lbldate.AutoSize = True
         lbldate.BackColor = Color.Transparent
-        lbldate.Font = New Font("Arial", 9.0F, FontStyle.Bold)
+        lbldate.Font = New Font("Arial", 9F, FontStyle.Bold)
         lbldate.ForeColor = Color.White
         lbldate.Location = New Point(396, 182)
         lbldate.Name = "lbldate"
@@ -126,7 +126,7 @@ Partial Class Form2
         ' 
         lblphone.AutoSize = True
         lblphone.BackColor = Color.Transparent
-        lblphone.Font = New Font("Arial", 9.0F, FontStyle.Bold)
+        lblphone.Font = New Font("Arial", 9F, FontStyle.Bold)
         lblphone.ForeColor = Color.White
         lblphone.Location = New Point(396, 220)
         lblphone.Name = "lblphone"
@@ -138,7 +138,7 @@ Partial Class Form2
         ' 
         lblemail.AutoSize = True
         lblemail.BackColor = Color.Transparent
-        lblemail.Font = New Font("Arial", 9.0F, FontStyle.Bold)
+        lblemail.Font = New Font("Arial", 9F, FontStyle.Bold)
         lblemail.ForeColor = Color.White
         lblemail.Location = New Point(396, 257)
         lblemail.Name = "lblemail"
@@ -150,7 +150,7 @@ Partial Class Form2
         ' 
         lbllocation.AutoSize = True
         lbllocation.BackColor = Color.Transparent
-        lbllocation.Font = New Font("Arial", 9.0F, FontStyle.Bold)
+        lbllocation.Font = New Font("Arial", 9F, FontStyle.Bold)
         lbllocation.ForeColor = Color.White
         lbllocation.Location = New Point(396, 295)
         lbllocation.Name = "lbllocation"
@@ -162,7 +162,7 @@ Partial Class Form2
         ' 
         lblplan.AutoSize = True
         lblplan.BackColor = Color.Transparent
-        lblplan.Font = New Font("Arial", 9.0F, FontStyle.Bold)
+        lblplan.Font = New Font("Arial", 9F, FontStyle.Bold)
         lblplan.ForeColor = Color.White
         lblplan.Location = New Point(396, 331)
         lblplan.Name = "lblplan"
@@ -174,7 +174,7 @@ Partial Class Form2
         ' 
         lblfee.AutoSize = True
         lblfee.BackColor = Color.Transparent
-        lblfee.Font = New Font("Arial", 9.0F, FontStyle.Bold)
+        lblfee.Font = New Font("Arial", 9F, FontStyle.Bold)
         lblfee.ForeColor = Color.White
         lblfee.Location = New Point(396, 373)
         lblfee.Name = "lblfee"
@@ -186,7 +186,7 @@ Partial Class Form2
         ' 
         lblnote.AutoSize = True
         lblnote.BackColor = Color.Transparent
-        lblnote.Font = New Font("Arial", 9.0F, FontStyle.Bold)
+        lblnote.Font = New Font("Arial", 9F, FontStyle.Bold)
         lblnote.ForeColor = Color.White
         lblnote.Location = New Point(396, 411)
         lblnote.Name = "lblnote"
@@ -211,7 +211,7 @@ Partial Class Form2
         rdbmale.BackColor = Color.Transparent
         rdbmale.Checked = True
         rdbmale.FlatStyle = FlatStyle.System
-        rdbmale.Font = New Font("Segoe UI", 11.0F)
+        rdbmale.Font = New Font("Segoe UI", 11F)
         rdbmale.ForeColor = Color.White
         rdbmale.Location = New Point(508, 138)
         rdbmale.Name = "rdbmale"
@@ -225,7 +225,7 @@ Partial Class Form2
         ' 
         rdbfemale.BackColor = Color.Transparent
         rdbfemale.FlatStyle = FlatStyle.System
-        rdbfemale.Font = New Font("Segoe UI", 11.0F)
+        rdbfemale.Font = New Font("Segoe UI", 11F)
         rdbfemale.ForeColor = Color.White
         rdbfemale.Location = New Point(627, 140)
         rdbfemale.Name = "rdbfemale"
@@ -238,7 +238,7 @@ Partial Class Form2
         ' 
         Label4.AutoSize = True
         Label4.BackColor = Color.Transparent
-        Label4.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        Label4.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
         Label4.Location = New Point(532, 141)
         Label4.Name = "Label4"
         Label4.Size = New Size(42, 19)
@@ -249,7 +249,7 @@ Partial Class Form2
         ' 
         Label5.AutoSize = True
         Label5.BackColor = Color.Transparent
-        Label5.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold)
+        Label5.Font = New Font("Segoe UI", 11F, FontStyle.Bold)
         Label5.Location = New Point(649, 141)
         Label5.Name = "Label5"
         Label5.Size = New Size(59, 20)
@@ -340,7 +340,7 @@ Partial Class Form2
         btnsavemember.BackColor = Color.LimeGreen
         btnsavemember.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(219), CByte(69))
         btnsavemember.FlatStyle = FlatStyle.Flat
-        btnsavemember.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        btnsavemember.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         btnsavemember.ForeColor = Color.White
         btnsavemember.Location = New Point(587, 468)
         btnsavemember.Name = "btnsavemember"
@@ -354,7 +354,7 @@ Partial Class Form2
         btnreset.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         btnreset.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(219), CByte(69))
         btnreset.FlatStyle = FlatStyle.Flat
-        btnreset.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        btnreset.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         btnreset.ForeColor = Color.White
         btnreset.Location = New Point(433, 468)
         btnreset.Name = "btnreset"
@@ -365,11 +365,11 @@ Partial Class Form2
         ' 
         ' Form2
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = My.Resources.Resources.Add_People_Form__2_
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(882, 531)
+        ClientSize = New Size(882, 532)
         Controls.Add(btnreset)
         Controls.Add(btnsavemember)
         Controls.Add(txtnote)

@@ -23,7 +23,6 @@ Partial Class Login
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
-        PictureBox1 = New PictureBox()
         grblog = New GroupBox()
         lblchangpass = New LinkLabel()
         btnlog = New Button()
@@ -31,29 +30,19 @@ Partial Class Login
         TextBox1 = New TextBox()
         lblpass = New Label()
         lblname = New Label()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         grblog.SuspendLayout()
         SuspendLayout()
         ' 
-        ' PictureBox1
-        ' 
-        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(0, 1)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(803, 451)
-        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox1.TabIndex = 0
-        PictureBox1.TabStop = False
-        ' 
         ' grblog
         ' 
-        grblog.BackColor = Color.White
+        grblog.BackColor = Color.Transparent
         grblog.Controls.Add(lblchangpass)
         grblog.Controls.Add(btnlog)
         grblog.Controls.Add(TextBox2)
         grblog.Controls.Add(TextBox1)
         grblog.Controls.Add(lblpass)
         grblog.Controls.Add(lblname)
+        grblog.ForeColor = SystemColors.ButtonHighlight
         grblog.Location = New Point(57, 71)
         grblog.Name = "grblog"
         grblog.Size = New Size(261, 291)
@@ -65,41 +54,50 @@ Partial Class Login
         ' 
         lblchangpass.ActiveLinkColor = Color.Black
         lblchangpass.AutoSize = True
-        lblchangpass.LinkColor = Color.FromArgb(CByte(0), CByte(64), CByte(0))
+        lblchangpass.LinkColor = Color.Green
         lblchangpass.Location = New Point(24, 195)
         lblchangpass.Name = "lblchangpass"
-        lblchangpass.Size = New Size(92, 15)
+        lblchangpass.Size = New Size(94, 15)
         lblchangpass.TabIndex = 5
         lblchangpass.TabStop = True
-        lblchangpass.Text = "forget Password"
-        lblchangpass.VisitedLinkColor = Color.FromArgb(CByte(0), CByte(64), CByte(0))
+        lblchangpass.Text = "Forget Password"
+        lblchangpass.VisitedLinkColor = Color.Green
         ' 
         ' btnlog
         ' 
+        btnlog.BackColor = Color.Honeydew
+        btnlog.ForeColor = SystemColors.ActiveCaptionText
         btnlog.Location = New Point(122, 191)
         btnlog.Name = "btnlog"
         btnlog.Size = New Size(97, 23)
         btnlog.TabIndex = 4
         btnlog.Text = "Login"
-        btnlog.UseVisualStyleBackColor = True
+        btnlog.UseVisualStyleBackColor = False
         ' 
         ' TextBox2
         ' 
+        TextBox2.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         TextBox2.Location = New Point(97, 107)
         TextBox2.Name = "TextBox2"
+        TextBox2.PasswordChar = "*"c
+        TextBox2.PlaceholderText = "User PassWord"
         TextBox2.Size = New Size(100, 23)
         TextBox2.TabIndex = 3
         ' 
         ' TextBox1
         ' 
+        TextBox1.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        TextBox1.BorderStyle = BorderStyle.FixedSingle
         TextBox1.Location = New Point(97, 69)
         TextBox1.Name = "TextBox1"
+        TextBox1.PlaceholderText = "Username"
         TextBox1.Size = New Size(100, 23)
         TextBox1.TabIndex = 2
         ' 
         ' lblpass
         ' 
         lblpass.AutoSize = True
+        lblpass.ForeColor = SystemColors.ControlLightLight
         lblpass.Location = New Point(34, 110)
         lblpass.Name = "lblpass"
         lblpass.Size = New Size(57, 15)
@@ -109,6 +107,7 @@ Partial Class Login
         ' lblname
         ' 
         lblname.AutoSize = True
+        lblname.ForeColor = SystemColors.ControlLightLight
         lblname.Location = New Point(32, 72)
         lblname.Name = "lblname"
         lblname.Size = New Size(59, 15)
@@ -119,18 +118,17 @@ Partial Class Login
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(800, 450)
         Controls.Add(grblog)
-        Controls.Add(PictureBox1)
+        DoubleBuffered = True
         Name = "Login"
         Text = "Login"
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         grblog.ResumeLayout(False)
         grblog.PerformLayout()
         ResumeLayout(False)
     End Sub
-
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents grblog As GroupBox
     Friend WithEvents btnlog As Button
     Friend WithEvents TextBox2 As TextBox
