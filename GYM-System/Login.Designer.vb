@@ -24,75 +24,51 @@ Partial Class Login
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         grblog = New GroupBox()
-        lblchangpass = New LinkLabel()
-        btnlog = New Button()
         TextBox2 = New TextBox()
-        TextBox1 = New TextBox()
+        txtusername = New TextBox()
         lblpass = New Label()
         lblname = New Label()
+        btnforgetpass = New Button()
+        btnlogin = New Button()
         grblog.SuspendLayout()
         SuspendLayout()
         ' 
         ' grblog
         ' 
         grblog.BackColor = Color.Transparent
-        grblog.Controls.Add(lblchangpass)
-        grblog.Controls.Add(btnlog)
+        grblog.Controls.Add(btnforgetpass)
+        grblog.Controls.Add(btnlogin)
         grblog.Controls.Add(TextBox2)
-        grblog.Controls.Add(TextBox1)
+        grblog.Controls.Add(txtusername)
         grblog.Controls.Add(lblpass)
         grblog.Controls.Add(lblname)
         grblog.ForeColor = SystemColors.ButtonHighlight
         grblog.Location = New Point(57, 71)
         grblog.Name = "grblog"
-        grblog.Size = New Size(261, 291)
+        grblog.Size = New Size(261, 243)
         grblog.TabIndex = 1
         grblog.TabStop = False
         grblog.Text = "login"
         ' 
-        ' lblchangpass
-        ' 
-        lblchangpass.ActiveLinkColor = Color.Black
-        lblchangpass.AutoSize = True
-        lblchangpass.LinkColor = Color.Green
-        lblchangpass.Location = New Point(24, 195)
-        lblchangpass.Name = "lblchangpass"
-        lblchangpass.Size = New Size(94, 15)
-        lblchangpass.TabIndex = 5
-        lblchangpass.TabStop = True
-        lblchangpass.Text = "Forget Password"
-        lblchangpass.VisitedLinkColor = Color.Green
-        ' 
-        ' btnlog
-        ' 
-        btnlog.BackColor = Color.Honeydew
-        btnlog.ForeColor = SystemColors.ActiveCaptionText
-        btnlog.Location = New Point(122, 191)
-        btnlog.Name = "btnlog"
-        btnlog.Size = New Size(97, 23)
-        btnlog.TabIndex = 4
-        btnlog.Text = "Login"
-        btnlog.UseVisualStyleBackColor = False
-        ' 
         ' TextBox2
         ' 
-        TextBox2.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        TextBox2.BackColor = Color.FromArgb(24, 24, 24)
         TextBox2.Location = New Point(97, 107)
         TextBox2.Name = "TextBox2"
         TextBox2.PasswordChar = "*"c
-        TextBox2.PlaceholderText = "User PassWord"
+        TextBox2.PlaceholderText = "Password"
         TextBox2.Size = New Size(100, 23)
         TextBox2.TabIndex = 3
         ' 
-        ' TextBox1
+        ' txtusername
         ' 
-        TextBox1.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        TextBox1.BorderStyle = BorderStyle.FixedSingle
-        TextBox1.Location = New Point(97, 69)
-        TextBox1.Name = "TextBox1"
-        TextBox1.PlaceholderText = "Username"
-        TextBox1.Size = New Size(100, 23)
-        TextBox1.TabIndex = 2
+        txtusername.BackColor = Color.FromArgb(24, 24, 24)
+        txtusername.BorderStyle = BorderStyle.FixedSingle
+        txtusername.Location = New Point(97, 69)
+        txtusername.Name = "txtusername"
+        txtusername.PlaceholderText = "Username"
+        txtusername.Size = New Size(100, 23)
+        txtusername.TabIndex = 2
         ' 
         ' lblpass
         ' 
@@ -114,6 +90,34 @@ Partial Class Login
         lblname.TabIndex = 0
         lblname.Text = "usernaem"
         ' 
+        ' btnforgetpass
+        ' 
+        btnforgetpass.BackColor = Color.FromArgb(24, 24, 24)
+        btnforgetpass.FlatAppearance.BorderColor = Color.FromArgb(32, 219, 69)
+        btnforgetpass.FlatStyle = FlatStyle.Flat
+        btnforgetpass.Font = New Font("Segoe UI", 8F, FontStyle.Bold Or FontStyle.Underline)
+        btnforgetpass.ForeColor = Color.White
+        btnforgetpass.Location = New Point(21, 170)
+        btnforgetpass.Name = "btnforgetpass"
+        btnforgetpass.Size = New Size(121, 29)
+        btnforgetpass.TabIndex = 29
+        btnforgetpass.Text = "Forget Password?"
+        btnforgetpass.UseVisualStyleBackColor = False
+        ' 
+        ' btnlogin
+        ' 
+        btnlogin.BackColor = Color.LimeGreen
+        btnlogin.FlatAppearance.BorderColor = Color.FromArgb(32, 219, 69)
+        btnlogin.FlatStyle = FlatStyle.Flat
+        btnlogin.Font = New Font("Segoe UI", 8F, FontStyle.Bold)
+        btnlogin.ForeColor = Color.White
+        btnlogin.Location = New Point(148, 170)
+        btnlogin.Name = "btnlogin"
+        btnlogin.Size = New Size(89, 29)
+        btnlogin.TabIndex = 28
+        btnlogin.Text = "Login"
+        btnlogin.UseVisualStyleBackColor = False
+        ' 
         ' Login
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -130,11 +134,11 @@ Partial Class Login
         ResumeLayout(False)
     End Sub
     Friend WithEvents grblog As GroupBox
-    Friend WithEvents btnlog As Button
     Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtusername As TextBox
     Friend WithEvents lblpass As Label
     Friend WithEvents lblname As Label
-    Friend WithEvents lblchangpass As LinkLabel
+    Friend WithEvents btnforgetpass As Button
+    Friend WithEvents btnlogin As Button
 
 End Class
