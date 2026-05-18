@@ -44,11 +44,6 @@ Partial Class DashBoard
         PictureBox1 = New PictureBox()
         btnlogout = New Button()
         lblname = New Label()
-        TESTToolStripMenuItem3 = New ToolStripMenuItem()
-        TESTToolStripMenuItem4 = New ToolStripMenuItem()
-        TESTToolStripMenuItem5 = New ToolStripMenuItem()
-        TESTToolStripMenuItem6 = New ToolStripMenuItem()
-        TESTToolStripMenuItem7 = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -94,13 +89,13 @@ Partial Class DashBoard
         MenuStrip1.AutoSize = False
         MenuStrip1.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         MenuStrip1.Dock = DockStyle.None
-        MenuStrip1.Items.AddRange(New ToolStripItem() {ToolStripMenuItem4, ToolStripMenuItem6, TrainerToolStripMenuItem, PlansToolStripMenuItem, AshfjahToolStripMenuItem, TESTToolStripMenuItem2, TESTToolStripMenuItem, ToolStripMenuItem2, ToolStripMenuItem3, TESTToolStripMenuItem1, ToolStripMenuItem1, ToolStripMenuItem5, TESTToolStripMenuItem3, TESTToolStripMenuItem4, TESTToolStripMenuItem5, TESTToolStripMenuItem6, TESTToolStripMenuItem7})
+        MenuStrip1.Items.AddRange(New ToolStripItem() {ToolStripMenuItem4, ToolStripMenuItem6, TrainerToolStripMenuItem, PlansToolStripMenuItem, AshfjahToolStripMenuItem, TESTToolStripMenuItem2, TESTToolStripMenuItem, ToolStripMenuItem2, ToolStripMenuItem3, TESTToolStripMenuItem1, ToolStripMenuItem1, ToolStripMenuItem5})
         MenuStrip1.LayoutStyle = ToolStripLayoutStyle.VerticalStackWithOverflow
-        MenuStrip1.Location = New Point(-3, 90)
+        MenuStrip1.Location = New Point(-3, 89)
         MenuStrip1.Margin = New Padding(20)
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.RenderMode = ToolStripRenderMode.System
-        MenuStrip1.Size = New Size(153, 473)
+        MenuStrip1.Size = New Size(153, 415)
         MenuStrip1.TabIndex = 34
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -222,9 +217,9 @@ Partial Class DashBoard
         btnlogout.FlatStyle = FlatStyle.Flat
         btnlogout.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         btnlogout.ForeColor = Color.DarkRed
-        btnlogout.Location = New Point(0, 558)
+        btnlogout.Location = New Point(0, 498)
         btnlogout.Name = "btnlogout"
-        btnlogout.Size = New Size(150, 46)
+        btnlogout.Size = New Size(150, 63)
         btnlogout.TabIndex = 52
         btnlogout.Text = "Logout"
         btnlogout.UseVisualStyleBackColor = False
@@ -241,46 +236,6 @@ Partial Class DashBoard
         lblname.TabIndex = 53
         lblname.Text = "Mohamad"
         ' 
-        ' TESTToolStripMenuItem3
-        ' 
-        TESTToolStripMenuItem3.ForeColor = Color.LimeGreen
-        TESTToolStripMenuItem3.Margin = New Padding(0, 0, 0, 15)
-        TESTToolStripMenuItem3.Name = "TESTToolStripMenuItem3"
-        TESTToolStripMenuItem3.Size = New Size(146, 19)
-        TESTToolStripMenuItem3.Text = "TEST"
-        ' 
-        ' TESTToolStripMenuItem4
-        ' 
-        TESTToolStripMenuItem4.ForeColor = Color.Lime
-        TESTToolStripMenuItem4.Margin = New Padding(0, 0, 0, 15)
-        TESTToolStripMenuItem4.Name = "TESTToolStripMenuItem4"
-        TESTToolStripMenuItem4.Size = New Size(146, 19)
-        TESTToolStripMenuItem4.Text = "TEST"
-        ' 
-        ' TESTToolStripMenuItem5
-        ' 
-        TESTToolStripMenuItem5.ForeColor = Color.Lime
-        TESTToolStripMenuItem5.Margin = New Padding(0, 0, 0, 15)
-        TESTToolStripMenuItem5.Name = "TESTToolStripMenuItem5"
-        TESTToolStripMenuItem5.Size = New Size(146, 19)
-        TESTToolStripMenuItem5.Text = "TEST"
-        ' 
-        ' TESTToolStripMenuItem6
-        ' 
-        TESTToolStripMenuItem6.ForeColor = Color.Lime
-        TESTToolStripMenuItem6.Margin = New Padding(0, 0, 0, 15)
-        TESTToolStripMenuItem6.Name = "TESTToolStripMenuItem6"
-        TESTToolStripMenuItem6.Size = New Size(146, 19)
-        TESTToolStripMenuItem6.Text = "TEST"
-        ' 
-        ' TESTToolStripMenuItem7
-        ' 
-        TESTToolStripMenuItem7.ForeColor = Color.Lime
-        TESTToolStripMenuItem7.Margin = New Padding(0, 0, 0, 15)
-        TESTToolStripMenuItem7.Name = "TESTToolStripMenuItem7"
-        TESTToolStripMenuItem7.Size = New Size(146, 19)
-        TESTToolStripMenuItem7.Text = "TEST"
-        ' 
         ' DashBoard
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -288,7 +243,7 @@ Partial Class DashBoard
         BackColor = Color.Honeydew
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1294, 605)
+        ClientSize = New Size(811, 561)
         Controls.Add(lblname)
         Controls.Add(btnlogout)
         Controls.Add(PictureBox1)
@@ -328,9 +283,4 @@ Partial Class DashBoard
     Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem5 As ToolStripMenuItem
     Friend WithEvents lblname As Label
-    Friend WithEvents TESTToolStripMenuItem3 As ToolStripMenuItem
-    Friend WithEvents TESTToolStripMenuItem4 As ToolStripMenuItem
-    Friend WithEvents TESTToolStripMenuItem5 As ToolStripMenuItem
-    Friend WithEvents TESTToolStripMenuItem6 As ToolStripMenuItem
-    Friend WithEvents TESTToolStripMenuItem7 As ToolStripMenuItem
 End Class
