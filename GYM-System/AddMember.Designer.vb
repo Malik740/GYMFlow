@@ -28,29 +28,29 @@ Partial Class AddMember
         Label1 = New Label()
         Label3 = New Label()
         grpuserinfo = New GroupBox()
+        rbfemale = New RadioButton()
+        rbmale = New RadioButton()
         mskphone = New MaskedTextBox()
         lblphone = New Label()
         lblgender = New Label()
         txtfullname = New TextBox()
         lblfullname = New Label()
         GroupBox1 = New GroupBox()
+        dtpstartdate = New DateTimePicker()
+        cmbsubplan = New ComboBox()
+        nudweight = New NumericUpDown()
+        nudheight = New NumericUpDown()
         lblsubplan = New Label()
         lblweight = New Label()
         Label5 = New Label()
         lblheight = New Label()
-        nudheight = New NumericUpDown()
-        nudweight = New NumericUpDown()
-        cmbsubplan = New ComboBox()
-        dtpstartdate = New DateTimePicker()
-        rbmale = New RadioButton()
-        rbfemale = New RadioButton()
         btnclear = New Button()
         btnsavemember = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         grpuserinfo.SuspendLayout()
         GroupBox1.SuspendLayout()
-        CType(nudheight, ComponentModel.ISupportInitialize).BeginInit()
         CType(nudweight, ComponentModel.ISupportInitialize).BeginInit()
+        CType(nudheight, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PictureBox1
@@ -59,7 +59,7 @@ Partial Class AddMember
         PictureBox1.Image = My.Resources.Resources.Logo
         PictureBox1.Location = New Point(0, -1)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(174, 95)
+        PictureBox1.Size = New Size(121, 71)
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox1.TabIndex = 14
         PictureBox1.TabStop = False
@@ -129,6 +129,28 @@ Partial Class AddMember
         grpuserinfo.TabIndex = 17
         grpuserinfo.TabStop = False
         grpuserinfo.Text = "Member Information"
+        ' 
+        ' rbfemale
+        ' 
+        rbfemale.AutoSize = True
+        rbfemale.Location = New Point(218, 129)
+        rbfemale.Name = "rbfemale"
+        rbfemale.Size = New Size(63, 19)
+        rbfemale.TabIndex = 22
+        rbfemale.Text = "Female"
+        rbfemale.UseVisualStyleBackColor = True
+        ' 
+        ' rbmale
+        ' 
+        rbmale.AutoSize = True
+        rbmale.Checked = True
+        rbmale.Location = New Point(122, 129)
+        rbmale.Name = "rbmale"
+        rbmale.Size = New Size(51, 19)
+        rbmale.TabIndex = 21
+        rbmale.TabStop = True
+        rbmale.Text = "Male"
+        rbmale.UseVisualStyleBackColor = True
         ' 
         ' mskphone
         ' 
@@ -201,6 +223,35 @@ Partial Class AddMember
         GroupBox1.TabStop = False
         GroupBox1.Text = "Body indicators and subscription"
         ' 
+        ' dtpstartdate
+        ' 
+        dtpstartdate.Location = New Point(86, 152)
+        dtpstartdate.Name = "dtpstartdate"
+        dtpstartdate.Size = New Size(212, 23)
+        dtpstartdate.TabIndex = 24
+        ' 
+        ' cmbsubplan
+        ' 
+        cmbsubplan.FormattingEnabled = True
+        cmbsubplan.Location = New Point(147, 105)
+        cmbsubplan.Name = "cmbsubplan"
+        cmbsubplan.Size = New Size(151, 23)
+        cmbsubplan.TabIndex = 23
+        ' 
+        ' nudweight
+        ' 
+        nudweight.Location = New Point(147, 68)
+        nudweight.Name = "nudweight"
+        nudweight.Size = New Size(151, 23)
+        nudweight.TabIndex = 22
+        ' 
+        ' nudheight
+        ' 
+        nudheight.Location = New Point(147, 28)
+        nudheight.Name = "nudheight"
+        nudheight.Size = New Size(151, 23)
+        nudheight.TabIndex = 21
+        ' 
         ' lblsubplan
         ' 
         lblsubplan.AutoSize = True
@@ -244,57 +295,6 @@ Partial Class AddMember
         lblheight.Size = New Size(71, 15)
         lblheight.TabIndex = 0
         lblheight.Text = "Height (cm)"
-        ' 
-        ' nudheight
-        ' 
-        nudheight.Location = New Point(147, 28)
-        nudheight.Name = "nudheight"
-        nudheight.Size = New Size(151, 23)
-        nudheight.TabIndex = 21
-        ' 
-        ' nudweight
-        ' 
-        nudweight.Location = New Point(147, 68)
-        nudweight.Name = "nudweight"
-        nudweight.Size = New Size(151, 23)
-        nudweight.TabIndex = 22
-        ' 
-        ' cmbsubplan
-        ' 
-        cmbsubplan.FormattingEnabled = True
-        cmbsubplan.Location = New Point(147, 105)
-        cmbsubplan.Name = "cmbsubplan"
-        cmbsubplan.Size = New Size(151, 23)
-        cmbsubplan.TabIndex = 23
-        ' 
-        ' dtpstartdate
-        ' 
-        dtpstartdate.Location = New Point(86, 152)
-        dtpstartdate.Name = "dtpstartdate"
-        dtpstartdate.Size = New Size(212, 23)
-        dtpstartdate.TabIndex = 24
-        ' 
-        ' rbmale
-        ' 
-        rbmale.AutoSize = True
-        rbmale.Checked = True
-        rbmale.Location = New Point(122, 129)
-        rbmale.Name = "rbmale"
-        rbmale.Size = New Size(51, 19)
-        rbmale.TabIndex = 21
-        rbmale.TabStop = True
-        rbmale.Text = "Male"
-        rbmale.UseVisualStyleBackColor = True
-        ' 
-        ' rbfemale
-        ' 
-        rbfemale.AutoSize = True
-        rbfemale.Location = New Point(218, 129)
-        rbfemale.Name = "rbfemale"
-        rbfemale.Size = New Size(63, 19)
-        rbfemale.TabIndex = 22
-        rbfemale.Text = "Female"
-        rbfemale.UseVisualStyleBackColor = True
         ' 
         ' btnclear
         ' 
@@ -348,8 +348,8 @@ Partial Class AddMember
         grpuserinfo.PerformLayout()
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
-        CType(nudheight, ComponentModel.ISupportInitialize).EndInit()
         CType(nudweight, ComponentModel.ISupportInitialize).EndInit()
+        CType(nudheight, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
