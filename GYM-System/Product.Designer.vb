@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class Product
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Product))
         PictureBox1 = New PictureBox()
         GroupBox1 = New GroupBox()
         Label1 = New Label()
@@ -99,7 +99,7 @@ Partial Class Form1
         PictureBox5.TabIndex = 0
         PictureBox5.TabStop = False
         ' 
-        ' Form1
+        ' Product
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
@@ -109,8 +109,8 @@ Partial Class Form1
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
         DoubleBuffered = True
-        Name = "Form1"
-        Text = "Form1"
+        Name = "Product"
+        Text = "Products"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()

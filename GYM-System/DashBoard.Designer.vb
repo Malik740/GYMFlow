@@ -38,16 +38,20 @@ Partial Class DashBoard
         FreezSubscriptionToolStripMenuItem = New ToolStripMenuItem()
         TrainerToolStripMenuItem = New ToolStripMenuItem()
         PlansToolStripMenuItem = New ToolStripMenuItem()
+        PlansToolStripMenuItem1 = New ToolStripMenuItem()
         AshfjahToolStripMenuItem = New ToolStripMenuItem()
+        TakeAttendanceToolStripMenuItem = New ToolStripMenuItem()
+        ToolStripMenuItem2 = New ToolStripMenuItem()
+        ViewProductsToolStripMenuItem = New ToolStripMenuItem()
         TESTToolStripMenuItem2 = New ToolStripMenuItem()
         AboutToolStripMenuItem = New ToolStripMenuItem()
-        ToolStripMenuItem2 = New ToolStripMenuItem()
         ToolStripMenuItem3 = New ToolStripMenuItem()
         ToolStripMenuItem1 = New ToolStripMenuItem()
         ToolStripMenuItem5 = New ToolStripMenuItem()
         PictureBox1 = New PictureBox()
         btnlogout = New Button()
         lblname = New Label()
+        ViewTrainersToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -82,7 +86,7 @@ Partial Class DashBoard
         Label4.BackColor = Color.Transparent
         Label4.Font = New Font("Segoe UI", 20F, FontStyle.Bold)
         Label4.ForeColor = Color.LimeGreen
-        Label4.Location = New Point(319, 9)
+        Label4.Location = New Point(313, 9)
         Label4.Name = "Label4"
         Label4.Size = New Size(146, 37)
         Label4.TabIndex = 2
@@ -93,7 +97,7 @@ Partial Class DashBoard
         MenuStrip1.AutoSize = False
         MenuStrip1.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         MenuStrip1.Dock = DockStyle.None
-        MenuStrip1.Items.AddRange(New ToolStripItem() {ToolStripMenuItem4, ToolStripMenuItem6, TrainerToolStripMenuItem, PlansToolStripMenuItem, AshfjahToolStripMenuItem, TESTToolStripMenuItem2, ToolStripMenuItem2, ToolStripMenuItem3, ToolStripMenuItem1, ToolStripMenuItem5})
+        MenuStrip1.Items.AddRange(New ToolStripItem() {ToolStripMenuItem4, ToolStripMenuItem6, TrainerToolStripMenuItem, PlansToolStripMenuItem, AshfjahToolStripMenuItem, ToolStripMenuItem2, TESTToolStripMenuItem2, ToolStripMenuItem3, ToolStripMenuItem1, ToolStripMenuItem5})
         MenuStrip1.LayoutStyle = ToolStripLayoutStyle.VerticalStackWithOverflow
         MenuStrip1.Location = New Point(-3, 89)
         MenuStrip1.Margin = New Padding(20)
@@ -116,19 +120,19 @@ Partial Class DashBoard
         ' 
         addnewusertool.BackColor = Color.Transparent
         addnewusertool.Name = "addnewusertool"
-        addnewusertool.Size = New Size(180, 22)
+        addnewusertool.Size = New Size(165, 22)
         addnewusertool.Text = "Add New User"
         ' 
         ' changeuserinfotool
         ' 
         changeuserinfotool.Name = "changeuserinfotool"
-        changeuserinfotool.Size = New Size(180, 22)
+        changeuserinfotool.Size = New Size(165, 22)
         changeuserinfotool.Text = "Change User Info"
         ' 
         ' DeleteUserToolStripMenuItem
         ' 
         DeleteUserToolStripMenuItem.Name = "DeleteUserToolStripMenuItem"
-        DeleteUserToolStripMenuItem.Size = New Size(180, 22)
+        DeleteUserToolStripMenuItem.Size = New Size(165, 22)
         DeleteUserToolStripMenuItem.Text = "Delete User"
         ' 
         ' ToolStripMenuItem6
@@ -143,29 +147,30 @@ Partial Class DashBoard
         ' ViewMemberToolStripMenuItem
         ' 
         ViewMemberToolStripMenuItem.Name = "ViewMemberToolStripMenuItem"
-        ViewMemberToolStripMenuItem.Size = New Size(180, 22)
+        ViewMemberToolStripMenuItem.Size = New Size(179, 22)
         ViewMemberToolStripMenuItem.Text = "View Member"
         ' 
         ' AddMemberToolStripMenuItem
         ' 
         AddMemberToolStripMenuItem.Name = "AddMemberToolStripMenuItem"
-        AddMemberToolStripMenuItem.Size = New Size(180, 22)
+        AddMemberToolStripMenuItem.Size = New Size(179, 22)
         AddMemberToolStripMenuItem.Text = "Add Member "
         ' 
         ' EditMemberToolStripMenuItem
         ' 
         EditMemberToolStripMenuItem.Name = "EditMemberToolStripMenuItem"
-        EditMemberToolStripMenuItem.Size = New Size(180, 22)
+        EditMemberToolStripMenuItem.Size = New Size(179, 22)
         EditMemberToolStripMenuItem.Text = "Edit Member"
         ' 
         ' FreezSubscriptionToolStripMenuItem
         ' 
         FreezSubscriptionToolStripMenuItem.Name = "FreezSubscriptionToolStripMenuItem"
-        FreezSubscriptionToolStripMenuItem.Size = New Size(180, 22)
+        FreezSubscriptionToolStripMenuItem.Size = New Size(179, 22)
         FreezSubscriptionToolStripMenuItem.Text = "Freeze Subscription "
         ' 
         ' TrainerToolStripMenuItem
         ' 
+        TrainerToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {ViewTrainersToolStripMenuItem})
         TrainerToolStripMenuItem.ForeColor = Color.LimeGreen
         TrainerToolStripMenuItem.Margin = New Padding(0, 0, 0, 15)
         TrainerToolStripMenuItem.Name = "TrainerToolStripMenuItem"
@@ -174,19 +179,48 @@ Partial Class DashBoard
         ' 
         ' PlansToolStripMenuItem
         ' 
+        PlansToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {PlansToolStripMenuItem1})
         PlansToolStripMenuItem.ForeColor = Color.LimeGreen
         PlansToolStripMenuItem.Margin = New Padding(0, 0, 0, 15)
         PlansToolStripMenuItem.Name = "PlansToolStripMenuItem"
         PlansToolStripMenuItem.Size = New Size(146, 19)
-        PlansToolStripMenuItem.Text = "Membership Plans"
+        PlansToolStripMenuItem.Text = "Membership"
+        ' 
+        ' PlansToolStripMenuItem1
+        ' 
+        PlansToolStripMenuItem1.Name = "PlansToolStripMenuItem1"
+        PlansToolStripMenuItem1.Size = New Size(102, 22)
+        PlansToolStripMenuItem1.Text = "Plans"
         ' 
         ' AshfjahToolStripMenuItem
         ' 
+        AshfjahToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {TakeAttendanceToolStripMenuItem})
         AshfjahToolStripMenuItem.ForeColor = Color.LimeGreen
         AshfjahToolStripMenuItem.Margin = New Padding(0, 0, 0, 15)
         AshfjahToolStripMenuItem.Name = "AshfjahToolStripMenuItem"
         AshfjahToolStripMenuItem.Size = New Size(146, 19)
         AshfjahToolStripMenuItem.Text = "Attendance"
+        ' 
+        ' TakeAttendanceToolStripMenuItem
+        ' 
+        TakeAttendanceToolStripMenuItem.Name = "TakeAttendanceToolStripMenuItem"
+        TakeAttendanceToolStripMenuItem.Size = New Size(162, 22)
+        TakeAttendanceToolStripMenuItem.Text = "Take Attendance"
+        ' 
+        ' ToolStripMenuItem2
+        ' 
+        ToolStripMenuItem2.DropDownItems.AddRange(New ToolStripItem() {ViewProductsToolStripMenuItem})
+        ToolStripMenuItem2.ForeColor = Color.Lime
+        ToolStripMenuItem2.Margin = New Padding(0, 0, 0, 15)
+        ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        ToolStripMenuItem2.Size = New Size(146, 19)
+        ToolStripMenuItem2.Text = "Product"
+        ' 
+        ' ViewProductsToolStripMenuItem
+        ' 
+        ViewProductsToolStripMenuItem.Name = "ViewProductsToolStripMenuItem"
+        ViewProductsToolStripMenuItem.Size = New Size(149, 22)
+        ViewProductsToolStripMenuItem.Text = "View Products"
         ' 
         ' TESTToolStripMenuItem2
         ' 
@@ -200,13 +234,8 @@ Partial Class DashBoard
         ' AboutToolStripMenuItem
         ' 
         AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        AboutToolStripMenuItem.Size = New Size(180, 22)
+        AboutToolStripMenuItem.Size = New Size(107, 22)
         AboutToolStripMenuItem.Text = "About"
-        ' 
-        ' ToolStripMenuItem2
-        ' 
-        ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        ToolStripMenuItem2.Size = New Size(146, 4)
         ' 
         ' ToolStripMenuItem3
         ' 
@@ -256,11 +285,17 @@ Partial Class DashBoard
         lblname.BackColor = Color.Transparent
         lblname.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         lblname.ForeColor = Color.LimeGreen
-        lblname.Location = New Point(279, 46)
+        lblname.Location = New Point(267, 46)
         lblname.Name = "lblname"
         lblname.Size = New Size(90, 20)
         lblname.TabIndex = 53
         lblname.Text = "Mohammad"
+        ' 
+        ' ViewTrainersToolStripMenuItem
+        ' 
+        ViewTrainersToolStripMenuItem.Name = "ViewTrainersToolStripMenuItem"
+        ViewTrainersToolStripMenuItem.Size = New Size(180, 22)
+        ViewTrainersToolStripMenuItem.Text = "View Trainers"
         ' 
         ' DashBoard
         ' 
@@ -313,4 +348,8 @@ Partial Class DashBoard
     Friend WithEvents AddMemberToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EditMemberToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FreezSubscriptionToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ViewProductsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TakeAttendanceToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PlansToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ViewTrainersToolStripMenuItem As ToolStripMenuItem
 End Class

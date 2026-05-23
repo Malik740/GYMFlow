@@ -67,6 +67,8 @@ Partial Class DeleteUser
         ' 
         ' txtusername
         ' 
+        txtusername.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtusername.BorderStyle = BorderStyle.FixedSingle
         txtusername.ForeColor = Color.White
         txtusername.Location = New Point(244, 172)
         txtusername.Name = "txtusername"

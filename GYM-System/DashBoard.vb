@@ -33,4 +33,26 @@
         FreezSub.Show()
 
     End Sub
+
+
+
+    Private Sub ViewProductsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ViewProductsToolStripMenuItem.Click
+        Product.Show()
+    End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        About.show()
+    End Sub
+
+    Private Sub TakeAttendanceToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TakeAttendanceToolStripMenuItem.Click
+        Attendance.Show()
+    End Sub
+
+    Private Sub PlansToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles PlansToolStripMenuItem1.Click
+        MembershipPlans.show()
+    End Sub
+
+    Private Sub ViewTrainersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ViewTrainersToolStripMenuItem.Click
+        Trainers.Show()
+    End Sub
 End Class

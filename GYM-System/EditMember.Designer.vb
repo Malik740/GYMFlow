@@ -73,6 +73,9 @@ Partial Class EditMember
         ' 
         ' nudheight
         ' 
+        nudheight.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        nudheight.BorderStyle = BorderStyle.FixedSingle
+        nudheight.ForeColor = Color.White
         nudheight.Location = New Point(147, 28)
         nudheight.Name = "nudheight"
         nudheight.Size = New Size(151, 23)
@@ -146,9 +149,9 @@ Partial Class EditMember
         ' 
         ' mskphone
         ' 
-        mskphone.BackColor = Color.White
+        mskphone.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         mskphone.BorderStyle = BorderStyle.None
-        mskphone.ForeColor = Color.Black
+        mskphone.ForeColor = Color.White
         mskphone.Location = New Point(119, 115)
         mskphone.Mask = "000-000-0000"
         mskphone.Name = "mskphone"
@@ -187,6 +190,8 @@ Partial Class EditMember
         ' 
         ' cmbsubplan
         ' 
+        cmbsubplan.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        cmbsubplan.ForeColor = Color.White
         cmbsubplan.FormattingEnabled = True
         cmbsubplan.Location = New Point(147, 105)
         cmbsubplan.Name = "cmbsubplan"
@@ -195,6 +200,9 @@ Partial Class EditMember
         ' 
         ' nudweight
         ' 
+        nudweight.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        nudweight.BorderStyle = BorderStyle.FixedSingle
+        nudweight.ForeColor = Color.White
         nudweight.Location = New Point(147, 68)
         nudweight.Name = "nudweight"
         nudweight.Size = New Size(151, 23)
@@ -202,7 +210,9 @@ Partial Class EditMember
         ' 
         ' txtfullname
         ' 
-        txtfullname.ForeColor = Color.Black
+        txtfullname.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtfullname.BorderStyle = BorderStyle.FixedSingle
+        txtfullname.ForeColor = Color.White
         txtfullname.Location = New Point(119, 73)
         txtfullname.Name = "txtfullname"
         txtfullname.Size = New Size(147, 23)
@@ -273,7 +283,9 @@ Partial Class EditMember
         ' 
         ' txtID
         ' 
-        txtID.ForeColor = Color.Black
+        txtID.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtID.BorderStyle = BorderStyle.FixedSingle
+        txtID.ForeColor = Color.White
         txtID.Location = New Point(119, 27)
         txtID.Name = "txtID"
         txtID.ReadOnly = True

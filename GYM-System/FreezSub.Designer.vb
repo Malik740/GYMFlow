@@ -186,7 +186,9 @@ Partial Class FreezSub
         ' 
         ' txtnewenddate
         ' 
-        txtnewenddate.ForeColor = Color.Black
+        txtnewenddate.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtnewenddate.BorderStyle = BorderStyle.FixedSingle
+        txtnewenddate.ForeColor = Color.White
         txtnewenddate.Location = New Point(116, 127)
         txtnewenddate.Name = "txtnewenddate"
         txtnewenddate.ReadOnly = True
@@ -202,6 +204,9 @@ Partial Class FreezSub
         ' 
         ' nudweight
         ' 
+        nudweight.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        nudweight.BorderStyle = BorderStyle.FixedSingle
+        nudweight.ForeColor = Color.White
         nudweight.Location = New Point(116, 68)
         nudweight.Name = "nudweight"
         nudweight.Size = New Size(212, 23)
@@ -260,7 +265,9 @@ Partial Class FreezSub
         ' 
         ' txtenddate
         ' 
-        txtenddate.ForeColor = Color.Black
+        txtenddate.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtenddate.BorderStyle = BorderStyle.FixedSingle
+        txtenddate.ForeColor = Color.White
         txtenddate.Location = New Point(119, 169)
         txtenddate.Name = "txtenddate"
         txtenddate.ReadOnly = True
@@ -279,7 +286,9 @@ Partial Class FreezSub
         ' 
         ' txtcurrentplan
         ' 
-        txtcurrentplan.ForeColor = Color.Black
+        txtcurrentplan.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtcurrentplan.BorderStyle = BorderStyle.FixedSingle
+        txtcurrentplan.ForeColor = Color.White
         txtcurrentplan.Location = New Point(119, 122)
         txtcurrentplan.Name = "txtcurrentplan"
         txtcurrentplan.ReadOnly = True
@@ -298,7 +307,9 @@ Partial Class FreezSub
         ' 
         ' txtID
         ' 
-        txtID.ForeColor = Color.Black
+        txtID.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtID.BorderStyle = BorderStyle.FixedSingle
+        txtID.ForeColor = Color.White
         txtID.Location = New Point(119, 27)
         txtID.Name = "txtID"
         txtID.ReadOnly = True
@@ -317,7 +328,9 @@ Partial Class FreezSub
         ' 
         ' txtfullname
         ' 
-        txtfullname.ForeColor = Color.Black
+        txtfullname.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtfullname.BorderStyle = BorderStyle.FixedSingle
+        txtfullname.ForeColor = Color.White
         txtfullname.Location = New Point(119, 73)
         txtfullname.Name = "txtfullname"
         txtfullname.ReadOnly = True

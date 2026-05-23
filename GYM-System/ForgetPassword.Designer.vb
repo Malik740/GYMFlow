@@ -36,6 +36,7 @@ Partial Class ForgetPassword
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.BackColor = Color.Transparent
         GroupBox1.Controls.Add(txtconfnew)
         GroupBox1.Controls.Add(txtnewpass)
         GroupBox1.Controls.Add(txtusername)
@@ -52,6 +53,9 @@ Partial Class ForgetPassword
         ' 
         ' txtconfnew
         ' 
+        txtconfnew.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtconfnew.BorderStyle = BorderStyle.FixedSingle
+        txtconfnew.ForeColor = Color.White
         txtconfnew.Location = New Point(185, 137)
         txtconfnew.Name = "txtconfnew"
         txtconfnew.PasswordChar = "*"c
@@ -60,6 +64,9 @@ Partial Class ForgetPassword
         ' 
         ' txtnewpass
         ' 
+        txtnewpass.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtnewpass.BorderStyle = BorderStyle.FixedSingle
+        txtnewpass.ForeColor = Color.White
         txtnewpass.Location = New Point(185, 91)
         txtnewpass.Name = "txtnewpass"
         txtnewpass.PasswordChar = "*"c
@@ -68,6 +75,9 @@ Partial Class ForgetPassword
         ' 
         ' txtusername
         ' 
+        txtusername.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtusername.BorderStyle = BorderStyle.FixedSingle
+        txtusername.ForeColor = Color.White
         txtusername.Location = New Point(185, 38)
         txtusername.Name = "txtusername"
         txtusername.Size = New Size(153, 23)
@@ -133,6 +143,7 @@ Partial Class ForgetPassword
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        BackgroundImage = My.Resources.Resources.background
         ClientSize = New Size(386, 358)
         Controls.Add(btncancel)
         Controls.Add(btnsave)
