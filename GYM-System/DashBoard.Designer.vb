@@ -22,7 +22,6 @@ Partial Class DashBoard
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DashBoard))
         Label3 = New Label()
         Label1 = New Label()
         Label4 = New Label()
@@ -37,6 +36,7 @@ Partial Class DashBoard
         EditMemberToolStripMenuItem = New ToolStripMenuItem()
         FreezSubscriptionToolStripMenuItem = New ToolStripMenuItem()
         TrainerToolStripMenuItem = New ToolStripMenuItem()
+        ViewTrainersToolStripMenuItem = New ToolStripMenuItem()
         PlansToolStripMenuItem = New ToolStripMenuItem()
         PlansToolStripMenuItem1 = New ToolStripMenuItem()
         AshfjahToolStripMenuItem = New ToolStripMenuItem()
@@ -51,9 +51,20 @@ Partial Class DashBoard
         PictureBox1 = New PictureBox()
         btnlogout = New Button()
         lblname = New Label()
-        ViewTrainersToolStripMenuItem = New ToolStripMenuItem()
+        pnlCardsActive = New Panel()
+        lblActiveCount = New Label()
+        Panel1 = New Panel()
+        lblTrainersCount = New Label()
+        Panel2 = New Panel()
+        lblExpiredCount = New Label()
+        Label2 = New Label()
+        Label6 = New Label()
+        Label7 = New Label()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        pnlCardsActive.SuspendLayout()
+        Panel1.SuspendLayout()
+        Panel2.SuspendLayout()
         SuspendLayout()
         ' 
         ' Label3
@@ -62,7 +73,7 @@ Partial Class DashBoard
         Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Segoe UI", 11F)
         Label3.ForeColor = Color.DimGray
-        Label3.Location = New Point(175, 46)
+        Label3.Location = New Point(164, 46)
         Label3.Name = "Label3"
         Label3.Size = New Size(98, 20)
         Label3.TabIndex = 29
@@ -74,7 +85,7 @@ Partial Class DashBoard
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Segoe UI", 20F, FontStyle.Bold)
         Label1.ForeColor = Color.DimGray
-        Label1.Location = New Point(167, 9)
+        Label1.Location = New Point(156, 9)
         Label1.Name = "Label1"
         Label1.Size = New Size(157, 37)
         Label1.TabIndex = 30
@@ -86,7 +97,7 @@ Partial Class DashBoard
         Label4.BackColor = Color.Transparent
         Label4.Font = New Font("Segoe UI", 20F, FontStyle.Bold)
         Label4.ForeColor = Color.LimeGreen
-        Label4.Location = New Point(313, 9)
+        Label4.Location = New Point(302, 9)
         Label4.Name = "Label4"
         Label4.Size = New Size(146, 37)
         Label4.TabIndex = 2
@@ -177,6 +188,12 @@ Partial Class DashBoard
         TrainerToolStripMenuItem.Size = New Size(146, 19)
         TrainerToolStripMenuItem.Text = "Trainers"
         ' 
+        ' ViewTrainersToolStripMenuItem
+        ' 
+        ViewTrainersToolStripMenuItem.Name = "ViewTrainersToolStripMenuItem"
+        ViewTrainersToolStripMenuItem.Size = New Size(143, 22)
+        ViewTrainersToolStripMenuItem.Text = "View Trainers"
+        ' 
         ' PlansToolStripMenuItem
         ' 
         PlansToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {PlansToolStripMenuItem1})
@@ -254,7 +271,7 @@ Partial Class DashBoard
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        PictureBox1.BackColor = Color.Transparent
         PictureBox1.Image = My.Resources.Resources.Logo
         PictureBox1.Location = New Point(-3, -15)
         PictureBox1.Name = "PictureBox1"
@@ -265,7 +282,7 @@ Partial Class DashBoard
         ' 
         ' btnlogout
         ' 
-        btnlogout.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        btnlogout.BackColor = Color.Transparent
         btnlogout.FlatAppearance.BorderColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
         btnlogout.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
         btnlogout.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
@@ -285,26 +302,122 @@ Partial Class DashBoard
         lblname.BackColor = Color.Transparent
         lblname.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         lblname.ForeColor = Color.LimeGreen
-        lblname.Location = New Point(267, 46)
+        lblname.Location = New Point(256, 46)
         lblname.Name = "lblname"
         lblname.Size = New Size(90, 20)
         lblname.TabIndex = 53
         lblname.Text = "Mohammad"
         ' 
-        ' ViewTrainersToolStripMenuItem
+        ' pnlCardsActive
         ' 
-        ViewTrainersToolStripMenuItem.Name = "ViewTrainersToolStripMenuItem"
-        ViewTrainersToolStripMenuItem.Size = New Size(180, 22)
-        ViewTrainersToolStripMenuItem.Text = "View Trainers"
+        pnlCardsActive.BackColor = Color.Transparent
+        pnlCardsActive.BorderStyle = BorderStyle.FixedSingle
+        pnlCardsActive.Controls.Add(lblActiveCount)
+        pnlCardsActive.Location = New Point(202, 112)
+        pnlCardsActive.Name = "pnlCardsActive"
+        pnlCardsActive.Size = New Size(200, 100)
+        pnlCardsActive.TabIndex = 54
+        ' 
+        ' lblActiveCount
+        ' 
+        lblActiveCount.AutoSize = True
+        lblActiveCount.Font = New Font("Cascadia Code ExtraLight", 17F)
+        lblActiveCount.ForeColor = Color.Lime
+        lblActiveCount.Location = New Point(72, 36)
+        lblActiveCount.Name = "lblActiveCount"
+        lblActiveCount.Size = New Size(0, 30)
+        lblActiveCount.TabIndex = 1
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.Transparent
+        Panel1.BorderStyle = BorderStyle.FixedSingle
+        Panel1.Controls.Add(lblTrainersCount)
+        Panel1.Location = New Point(424, 112)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(200, 100)
+        Panel1.TabIndex = 55
+        ' 
+        ' lblTrainersCount
+        ' 
+        lblTrainersCount.AutoSize = True
+        lblTrainersCount.Font = New Font("Cascadia Code ExtraLight", 17F)
+        lblTrainersCount.ForeColor = Color.Lime
+        lblTrainersCount.Location = New Point(77, 36)
+        lblTrainersCount.Name = "lblTrainersCount"
+        lblTrainersCount.Size = New Size(0, 30)
+        lblTrainersCount.TabIndex = 57
+        ' 
+        ' Panel2
+        ' 
+        Panel2.BackColor = Color.Transparent
+        Panel2.BorderStyle = BorderStyle.FixedSingle
+        Panel2.Controls.Add(lblExpiredCount)
+        Panel2.Location = New Point(651, 112)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(200, 100)
+        Panel2.TabIndex = 56
+        ' 
+        ' lblExpiredCount
+        ' 
+        lblExpiredCount.AutoSize = True
+        lblExpiredCount.Font = New Font("Cascadia Code ExtraLight", 17F)
+        lblExpiredCount.ForeColor = Color.Lime
+        lblExpiredCount.Location = New Point(78, 36)
+        lblExpiredCount.Name = "lblExpiredCount"
+        lblExpiredCount.Size = New Size(0, 30)
+        lblExpiredCount.TabIndex = 58
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
+        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        Label2.ForeColor = Color.LightGray
+        Label2.Location = New Point(202, 112)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(107, 15)
+        Label2.TabIndex = 0
+        Label2.Text = "ACTIVE MEMBERS"
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.BackColor = Color.Transparent
+        Label6.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        Label6.ForeColor = Color.LightGray
+        Label6.Location = New Point(424, 112)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(103, 15)
+        Label6.TabIndex = 2
+        Label6.Text = "TOTAL TRAINERS"
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.BackColor = Color.Transparent
+        Label7.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        Label7.ForeColor = Color.LightGray
+        Label7.Location = New Point(651, 112)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(95, 15)
+        Label7.TabIndex = 57
+        Label7.Text = "EXPIRED PLANS"
         ' 
         ' DashBoard
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Honeydew
-        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImage = My.Resources.Resources.Dashboard_back
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(863, 542)
+        Controls.Add(Label7)
+        Controls.Add(Label6)
+        Controls.Add(Label2)
+        Controls.Add(Panel2)
+        Controls.Add(Panel1)
+        Controls.Add(pnlCardsActive)
         Controls.Add(lblname)
         Controls.Add(btnlogout)
         Controls.Add(PictureBox1)
@@ -320,6 +433,12 @@ Partial Class DashBoard
         MenuStrip1.ResumeLayout(False)
         MenuStrip1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        pnlCardsActive.ResumeLayout(False)
+        pnlCardsActive.PerformLayout()
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
+        Panel2.ResumeLayout(False)
+        Panel2.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -352,4 +471,13 @@ Partial Class DashBoard
     Friend WithEvents TakeAttendanceToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PlansToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ViewTrainersToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents pnlCardsActive As Panel
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents lblActiveCount As Label
+    Friend WithEvents lblTrainersCount As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents lblExpiredCount As Label
 End Class
