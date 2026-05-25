@@ -71,41 +71,42 @@ Public Class DashBoard
 
     Private Sub DashBoard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
+            Me.DoubleBuffered = True
+            Dim dgvType As Type = dgvLatestMembers.[GetType]()
+            Dim pi As System.Reflection.PropertyInfo = dgvType.GetProperty("DoubleBuffered", System.Reflection.BindingFlags.Instance Or System.Reflection.BindingFlags.NonPublic)
+            pi.SetValue(dgvLatestMembers, True, Nothing)
 
             Dim dsActive As New DataSet()
-            Dim strActive As String = "SELECT COUNT(*) FROM Members"
-            Dim daActive As New SqlDataAdapter(strActive, conn)
-
+            Dim daActive As New SqlDataAdapter("SELECT COUNT(*) FROM Members", conn)
             OpenConnection()
             daActive.Fill(dsActive, "ActiveCount")
             CloseConnection()
-
             lblActiveCount.Text = dsActive.Tables("ActiveCount").Rows(0).Item(0).ToString()
 
-
             Dim dsTrainers As New DataSet()
-            Dim strTrainers As String = "SELECT COUNT(*) FROM Trainers"
-            Dim daTrainers As New SqlDataAdapter(strTrainers, conn)
-
+            Dim daTrainers As New SqlDataAdapter("SELECT COUNT(*) FROM Trainers", conn)
             OpenConnection()
             daTrainers.Fill(dsTrainers, "TrainersCount")
             CloseConnection()
-
             lblTrainersCount.Text = dsTrainers.Tables("TrainersCount").Rows(0).Item(0).ToString()
 
-
             Dim dsExpired As New DataSet()
-            Dim strExpired As String = "SELECT COUNT(*) FROM MembershipPlans"
-            Dim daExpired As New SqlDataAdapter(strExpired, conn)
-
+            Dim daExpired As New SqlDataAdapter("SELECT COUNT(*) FROM MembershipPlans", conn)
             OpenConnection()
             daExpired.Fill(dsExpired, "ExpiredCount")
             CloseConnection()
-
             lblExpiredCount.Text = dsExpired.Tables("ExpiredCount").Rows(0).Item(0).ToString()
 
+            Dim dsGrid As New DataSet()
+            Dim strGrid As String = "SELECT MemberID, FullName, Phone, Weight, Height, JoinDate, ExpiryDate, SubscriptionStatus FROM Members"
+            Dim daGrid As New SqlDataAdapter(strGrid, conn)
+            OpenConnection()
+            daGrid.Fill(dsGrid, "GridData")
+            CloseConnection()
+            dgvLatestMembers.DataSource = dsGrid.Tables("GridData")
+
         Catch ex As Exception
-            MsgBox("Error loading dashboard statistics: " & ex.Message, MsgBoxStyle.Critical, "Database Error")
+            MsgBox("Error loading dashboard data: " & ex.Message, MsgBoxStyle.Critical, "Database Error")
         Finally
             CloseConnection()
         End Try

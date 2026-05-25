@@ -22,6 +22,9 @@ Partial Class DashBoard
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Label3 = New Label()
         Label1 = New Label()
         Label4 = New Label()
@@ -51,20 +54,23 @@ Partial Class DashBoard
         PictureBox1 = New PictureBox()
         btnlogout = New Button()
         lblname = New Label()
+        dgvLatestMembers = New DataGridView()
         pnlCardsActive = New Panel()
+        Label5 = New Label()
         lblActiveCount = New Label()
-        Panel1 = New Panel()
-        lblTrainersCount = New Label()
         Panel2 = New Panel()
-        lblExpiredCount = New Label()
-        Label2 = New Label()
         Label6 = New Label()
+        lblTrainersCount = New Label()
         Label7 = New Label()
+        Panel3 = New Panel()
+        lblExpiredCount = New Label()
+        Label8 = New Label()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvLatestMembers, ComponentModel.ISupportInitialize).BeginInit()
         pnlCardsActive.SuspendLayout()
-        Panel1.SuspendLayout()
         Panel2.SuspendLayout()
+        Panel3.SuspendLayout()
         SuspendLayout()
         ' 
         ' Label3
@@ -73,7 +79,7 @@ Partial Class DashBoard
         Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Segoe UI", 11F)
         Label3.ForeColor = Color.DimGray
-        Label3.Location = New Point(164, 46)
+        Label3.Location = New Point(159, 46)
         Label3.Name = "Label3"
         Label3.Size = New Size(98, 20)
         Label3.TabIndex = 29
@@ -308,15 +314,69 @@ Partial Class DashBoard
         lblname.TabIndex = 53
         lblname.Text = "Mohammad"
         ' 
+        ' dgvLatestMembers
+        ' 
+        dgvLatestMembers.AllowUserToAddRows = False
+        dgvLatestMembers.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.BackColor = Color.LightGray
+        DataGridViewCellStyle1.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle1.ForeColor = Color.Black
+        DataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
+        DataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(CByte(116), CByte(240), CByte(41))
+        dgvLatestMembers.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        dgvLatestMembers.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        dgvLatestMembers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgvLatestMembers.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
+        dgvLatestMembers.BackgroundColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle2.ForeColor = Color.FromArgb(CByte(41), CByte(240), CByte(116))
+        DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        dgvLatestMembers.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        dgvLatestMembers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = Color.LightGray
+        DataGridViewCellStyle3.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle3.ForeColor = Color.Black
+        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
+        DataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(CByte(116), CByte(240), CByte(41))
+        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
+        dgvLatestMembers.DefaultCellStyle = DataGridViewCellStyle3
+        dgvLatestMembers.EnableHeadersVisualStyles = False
+        dgvLatestMembers.GridColor = Color.FromArgb(CByte(116), CByte(240), CByte(41))
+        dgvLatestMembers.Location = New Point(199, 189)
+        dgvLatestMembers.Name = "dgvLatestMembers"
+        dgvLatestMembers.ReadOnly = True
+        dgvLatestMembers.RowHeadersVisible = False
+        dgvLatestMembers.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        dgvLatestMembers.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        dgvLatestMembers.Size = New Size(614, 294)
+        dgvLatestMembers.TabIndex = 58
+        ' 
         ' pnlCardsActive
         ' 
-        pnlCardsActive.BackColor = Color.Transparent
+        pnlCardsActive.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         pnlCardsActive.BorderStyle = BorderStyle.FixedSingle
+        pnlCardsActive.Controls.Add(Label5)
         pnlCardsActive.Controls.Add(lblActiveCount)
-        pnlCardsActive.Location = New Point(202, 112)
+        pnlCardsActive.Location = New Point(173, 89)
         pnlCardsActive.Name = "pnlCardsActive"
-        pnlCardsActive.Size = New Size(200, 100)
-        pnlCardsActive.TabIndex = 54
+        pnlCardsActive.Size = New Size(215, 94)
+        pnlCardsActive.TabIndex = 55
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.BackColor = Color.Transparent
+        Label5.ForeColor = Color.LightGray
+        Label5.Location = New Point(-1, -1)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(103, 15)
+        Label5.TabIndex = 63
+        Label5.Text = "ACTIVE MEMBERS"
         ' 
         ' lblActiveCount
         ' 
@@ -328,15 +388,28 @@ Partial Class DashBoard
         lblActiveCount.Size = New Size(0, 30)
         lblActiveCount.TabIndex = 1
         ' 
-        ' Panel1
+        ' Panel2
         ' 
-        Panel1.BackColor = Color.Transparent
-        Panel1.BorderStyle = BorderStyle.FixedSingle
-        Panel1.Controls.Add(lblTrainersCount)
-        Panel1.Location = New Point(424, 112)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(200, 100)
-        Panel1.TabIndex = 55
+        Panel2.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        Panel2.BorderStyle = BorderStyle.FixedSingle
+        Panel2.Controls.Add(Label6)
+        Panel2.Controls.Add(lblTrainersCount)
+        Panel2.Controls.Add(Label7)
+        Panel2.Location = New Point(408, 89)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(213, 94)
+        Panel2.TabIndex = 58
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.BackColor = Color.Transparent
+        Label6.ForeColor = Color.LightGray
+        Label6.Location = New Point(-1, -1)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(91, 15)
+        Label6.TabIndex = 64
+        Label6.Text = "TOTAL TRAINER"
         ' 
         ' lblTrainersCount
         ' 
@@ -348,61 +421,49 @@ Partial Class DashBoard
         lblTrainersCount.Size = New Size(0, 30)
         lblTrainersCount.TabIndex = 57
         ' 
-        ' Panel2
-        ' 
-        Panel2.BackColor = Color.Transparent
-        Panel2.BorderStyle = BorderStyle.FixedSingle
-        Panel2.Controls.Add(lblExpiredCount)
-        Panel2.Location = New Point(651, 112)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(200, 100)
-        Panel2.TabIndex = 56
-        ' 
-        ' lblExpiredCount
-        ' 
-        lblExpiredCount.AutoSize = True
-        lblExpiredCount.Font = New Font("Cascadia Code ExtraLight", 17F)
-        lblExpiredCount.ForeColor = Color.Lime
-        lblExpiredCount.Location = New Point(78, 36)
-        lblExpiredCount.Name = "lblExpiredCount"
-        lblExpiredCount.Size = New Size(0, 30)
-        lblExpiredCount.TabIndex = 58
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        Label2.ForeColor = Color.LightGray
-        Label2.Location = New Point(202, 112)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(107, 15)
-        Label2.TabIndex = 0
-        Label2.Text = "ACTIVE MEMBERS"
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.BackColor = Color.Transparent
-        Label6.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        Label6.ForeColor = Color.LightGray
-        Label6.Location = New Point(424, 112)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(103, 15)
-        Label6.TabIndex = 2
-        Label6.Text = "TOTAL TRAINERS"
-        ' 
         ' Label7
         ' 
         Label7.AutoSize = True
         Label7.BackColor = Color.Transparent
         Label7.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         Label7.ForeColor = Color.LightGray
-        Label7.Location = New Point(651, 112)
+        Label7.Location = New Point(-1, -1)
         Label7.Name = "Label7"
-        Label7.Size = New Size(95, 15)
-        Label7.TabIndex = 57
-        Label7.Text = "EXPIRED PLANS"
+        Label7.Size = New Size(0, 15)
+        Label7.TabIndex = 58
+        ' 
+        ' Panel3
+        ' 
+        Panel3.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        Panel3.BorderStyle = BorderStyle.FixedSingle
+        Panel3.Controls.Add(lblExpiredCount)
+        Panel3.Controls.Add(Label8)
+        Panel3.Location = New Point(634, 89)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(217, 94)
+        Panel3.TabIndex = 62
+        ' 
+        ' lblExpiredCount
+        ' 
+        lblExpiredCount.AutoSize = True
+        lblExpiredCount.Font = New Font("Cascadia Code ExtraLight", 17F)
+        lblExpiredCount.ForeColor = Color.Lime
+        lblExpiredCount.Location = New Point(77, 36)
+        lblExpiredCount.Name = "lblExpiredCount"
+        lblExpiredCount.Size = New Size(0, 30)
+        lblExpiredCount.TabIndex = 63
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.BackColor = Color.Transparent
+        Label8.Font = New Font("Segoe UI", 9F)
+        Label8.ForeColor = Color.LightGray
+        Label8.Location = New Point(-1, -1)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(90, 15)
+        Label8.TabIndex = 62
+        Label8.Text = "EXPIRED PLANS"
         ' 
         ' DashBoard
         ' 
@@ -411,14 +472,12 @@ Partial Class DashBoard
         BackColor = Color.Honeydew
         BackgroundImage = My.Resources.Resources.Dashboard_back
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(863, 542)
-        Controls.Add(Label7)
-        Controls.Add(Label6)
-        Controls.Add(Label2)
+        ClientSize = New Size(863, 546)
+        Controls.Add(Panel3)
         Controls.Add(Panel2)
-        Controls.Add(Panel1)
-        Controls.Add(pnlCardsActive)
+        Controls.Add(dgvLatestMembers)
         Controls.Add(lblname)
+        Controls.Add(pnlCardsActive)
         Controls.Add(btnlogout)
         Controls.Add(PictureBox1)
         Controls.Add(Label4)
@@ -433,12 +492,13 @@ Partial Class DashBoard
         MenuStrip1.ResumeLayout(False)
         MenuStrip1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvLatestMembers, ComponentModel.ISupportInitialize).EndInit()
         pnlCardsActive.ResumeLayout(False)
         pnlCardsActive.PerformLayout()
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
+        Panel3.ResumeLayout(False)
+        Panel3.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -471,13 +531,15 @@ Partial Class DashBoard
     Friend WithEvents TakeAttendanceToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PlansToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ViewTrainersToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents dgvLatestMembers As DataGridView
     Friend WithEvents pnlCardsActive As Panel
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
     Friend WithEvents lblActiveCount As Label
+    Friend WithEvents Panel2 As Panel
     Friend WithEvents lblTrainersCount As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents Panel3 As Panel
     Friend WithEvents lblExpiredCount As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
 End Class
