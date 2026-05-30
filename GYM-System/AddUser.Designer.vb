@@ -166,9 +166,9 @@ Partial Class AddUser
         lblplan.ForeColor = Color.White
         lblplan.Location = New Point(396, 331)
         lblplan.Name = "lblplan"
-        lblplan.Size = New Size(107, 15)
+        lblplan.Size = New Size(66, 15)
         lblplan.TabIndex = 9
-        lblplan.Text = "MemberShip Plan"
+        lblplan.Text = "User sheft"
         ' 
         ' lblfee
         ' 
@@ -178,9 +178,9 @@ Partial Class AddUser
         lblfee.ForeColor = Color.White
         lblfee.Location = New Point(396, 373)
         lblfee.Name = "lblfee"
-        lblfee.Size = New Size(99, 15)
+        lblfee.Size = New Size(72, 15)
         lblfee.TabIndex = 10
-        lblfee.Text = "Registration Fee"
+        lblfee.Text = "User salary"
         ' 
         ' lblnote
         ' 
@@ -363,7 +363,7 @@ Partial Class AddUser
         btnreset.Text = "Reset"
         btnreset.UseVisualStyleBackColor = False
         ' 
-        ' Form2
+        ' AddUser
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
@@ -399,7 +399,7 @@ Partial Class AddUser
         DoubleBuffered = True
         ForeColor = SystemColors.ControlLightLight
         FormBorderStyle = FormBorderStyle.FixedSingle
-        Name = "Form2"
+        Name = "AddUser"
         Text = "Form2"
         ResumeLayout(False)
         PerformLayout()
