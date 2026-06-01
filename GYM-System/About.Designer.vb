@@ -185,7 +185,7 @@ Partial Class About
         btnclose.Location = New Point(224, 304)
         btnclose.Name = "btnclose"
         btnclose.Size = New Size(97, 29)
-        btnclose.TabIndex = 37
+        btnclose.TabIndex = 0
         btnclose.Text = "Close"
         btnclose.UseVisualStyleBackColor = False
         ' 

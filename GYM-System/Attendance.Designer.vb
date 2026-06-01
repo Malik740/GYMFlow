@@ -27,17 +27,17 @@ Partial Class Attendance
         Label2 = New Label()
         lblview = New Label()
         grbenteringinfo = New GroupBox()
-        btnsavechanges = New Button()
-        txtusername = New TextBox()
+        btnRecord = New Button()
+        txtPhone = New TextBox()
         lblenter = New Label()
         grbtakeattendance = New GroupBox()
-        txtExpiry = New TextBox()
+        txtExpiryDate = New TextBox()
         Label5 = New Label()
         txtStatus = New TextBox()
         Label4 = New Label()
-        membername = New TextBox()
+        txtMemberName = New TextBox()
         Label3 = New Label()
-        btncancel = New Button()
+        btnCancel = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         grbenteringinfo.SuspendLayout()
         grbtakeattendance.SuspendLayout()
@@ -94,40 +94,40 @@ Partial Class Attendance
         ' grbenteringinfo
         ' 
         grbenteringinfo.BackColor = Color.Transparent
-        grbenteringinfo.Controls.Add(btnsavechanges)
-        grbenteringinfo.Controls.Add(txtusername)
+        grbenteringinfo.Controls.Add(btnRecord)
+        grbenteringinfo.Controls.Add(txtPhone)
         grbenteringinfo.Controls.Add(lblenter)
         grbenteringinfo.ForeColor = Color.White
         grbenteringinfo.Location = New Point(30, 116)
         grbenteringinfo.Name = "grbenteringinfo"
         grbenteringinfo.Size = New Size(354, 151)
-        grbenteringinfo.TabIndex = 36
+        grbenteringinfo.TabIndex = 0
         grbenteringinfo.TabStop = False
         grbenteringinfo.Text = "Attendance"
         ' 
-        ' btnsavechanges
+        ' btnRecord
         ' 
-        btnsavechanges.BackColor = Color.LimeGreen
-        btnsavechanges.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(219), CByte(69))
-        btnsavechanges.FlatStyle = FlatStyle.Flat
-        btnsavechanges.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
-        btnsavechanges.ForeColor = Color.White
-        btnsavechanges.Location = New Point(84, 84)
-        btnsavechanges.Name = "btnsavechanges"
-        btnsavechanges.Size = New Size(174, 29)
-        btnsavechanges.TabIndex = 37
-        btnsavechanges.Text = "RECORD ATTENDANCE"
-        btnsavechanges.UseVisualStyleBackColor = False
+        btnRecord.BackColor = Color.LimeGreen
+        btnRecord.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(219), CByte(69))
+        btnRecord.FlatStyle = FlatStyle.Flat
+        btnRecord.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
+        btnRecord.ForeColor = Color.White
+        btnRecord.Location = New Point(84, 84)
+        btnRecord.Name = "btnRecord"
+        btnRecord.Size = New Size(174, 29)
+        btnRecord.TabIndex = 1
+        btnRecord.Text = "RECORD ATTENDANCE"
+        btnRecord.UseVisualStyleBackColor = False
         ' 
-        ' txtusername
+        ' txtPhone
         ' 
-        txtusername.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        txtusername.BorderStyle = BorderStyle.FixedSingle
-        txtusername.ForeColor = Color.White
-        txtusername.Location = New Point(178, 28)
-        txtusername.Name = "txtusername"
-        txtusername.Size = New Size(164, 23)
-        txtusername.TabIndex = 1
+        txtPhone.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtPhone.BorderStyle = BorderStyle.FixedSingle
+        txtPhone.ForeColor = Color.White
+        txtPhone.Location = New Point(178, 28)
+        txtPhone.Name = "txtPhone"
+        txtPhone.Size = New Size(164, 23)
+        txtPhone.TabIndex = 0
         ' 
         ' lblenter
         ' 
@@ -142,30 +142,30 @@ Partial Class Attendance
         ' grbtakeattendance
         ' 
         grbtakeattendance.BackColor = Color.Transparent
-        grbtakeattendance.Controls.Add(txtExpiry)
+        grbtakeattendance.Controls.Add(txtExpiryDate)
         grbtakeattendance.Controls.Add(Label5)
         grbtakeattendance.Controls.Add(txtStatus)
         grbtakeattendance.Controls.Add(Label4)
-        grbtakeattendance.Controls.Add(membername)
+        grbtakeattendance.Controls.Add(txtMemberName)
         grbtakeattendance.Controls.Add(Label3)
         grbtakeattendance.ForeColor = Color.White
         grbtakeattendance.Location = New Point(415, 116)
         grbtakeattendance.Name = "grbtakeattendance"
         grbtakeattendance.Size = New Size(348, 151)
-        grbtakeattendance.TabIndex = 38
+        grbtakeattendance.TabIndex = 1
         grbtakeattendance.TabStop = False
         grbtakeattendance.Text = "Member Attendance"
         ' 
-        ' txtExpiry
+        ' txtExpiryDate
         ' 
-        txtExpiry.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        txtExpiry.BorderStyle = BorderStyle.FixedSingle
-        txtExpiry.ForeColor = Color.White
-        txtExpiry.Location = New Point(141, 106)
-        txtExpiry.Name = "txtExpiry"
-        txtExpiry.ReadOnly = True
-        txtExpiry.Size = New Size(164, 23)
-        txtExpiry.TabIndex = 41
+        txtExpiryDate.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtExpiryDate.BorderStyle = BorderStyle.FixedSingle
+        txtExpiryDate.ForeColor = Color.White
+        txtExpiryDate.Location = New Point(141, 106)
+        txtExpiryDate.Name = "txtExpiryDate"
+        txtExpiryDate.ReadOnly = True
+        txtExpiryDate.Size = New Size(164, 23)
+        txtExpiryDate.TabIndex = 2
         ' 
         ' Label5
         ' 
@@ -186,7 +186,7 @@ Partial Class Attendance
         txtStatus.Name = "txtStatus"
         txtStatus.ReadOnly = True
         txtStatus.Size = New Size(164, 23)
-        txtStatus.TabIndex = 39
+        txtStatus.TabIndex = 1
         ' 
         ' Label4
         ' 
@@ -198,16 +198,16 @@ Partial Class Attendance
         Label4.TabIndex = 38
         Label4.Text = "Subscription Status"
         ' 
-        ' membername
+        ' txtMemberName
         ' 
-        membername.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        membername.BorderStyle = BorderStyle.FixedSingle
-        membername.ForeColor = Color.White
-        membername.Location = New Point(141, 28)
-        membername.Name = "membername"
-        membername.ReadOnly = True
-        membername.Size = New Size(164, 23)
-        membername.TabIndex = 1
+        txtMemberName.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtMemberName.BorderStyle = BorderStyle.FixedSingle
+        txtMemberName.ForeColor = Color.White
+        txtMemberName.Location = New Point(141, 28)
+        txtMemberName.Name = "txtMemberName"
+        txtMemberName.ReadOnly = True
+        txtMemberName.Size = New Size(164, 23)
+        txtMemberName.TabIndex = 0
         ' 
         ' Label3
         ' 
@@ -219,19 +219,19 @@ Partial Class Attendance
         Label3.TabIndex = 0
         Label3.Text = "Member Name"
         ' 
-        ' btncancel
+        ' btnCancel
         ' 
-        btncancel.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        btncancel.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(219), CByte(69))
-        btncancel.FlatStyle = FlatStyle.Flat
-        btncancel.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        btncancel.ForeColor = Color.White
-        btncancel.Location = New Point(350, 321)
-        btncancel.Name = "btncancel"
-        btncancel.Size = New Size(104, 29)
-        btncancel.TabIndex = 39
-        btncancel.Text = "Cancel"
-        btncancel.UseVisualStyleBackColor = False
+        btnCancel.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        btnCancel.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(219), CByte(69))
+        btnCancel.FlatStyle = FlatStyle.Flat
+        btnCancel.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        btnCancel.ForeColor = Color.White
+        btnCancel.Location = New Point(350, 321)
+        btnCancel.Name = "btnCancel"
+        btnCancel.Size = New Size(104, 29)
+        btnCancel.TabIndex = 2
+        btnCancel.Text = "Cancel"
+        btnCancel.UseVisualStyleBackColor = False
         ' 
         ' Attendance
         ' 
@@ -240,7 +240,7 @@ Partial Class Attendance
         BackgroundImage = My.Resources.Resources.background1
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(785, 450)
-        Controls.Add(btncancel)
+        Controls.Add(btnCancel)
         Controls.Add(grbtakeattendance)
         Controls.Add(grbenteringinfo)
         Controls.Add(Label1)
@@ -264,14 +264,14 @@ Partial Class Attendance
     Friend WithEvents lblview As Label
     Friend WithEvents grbenteringinfo As GroupBox
     Friend WithEvents lblenter As Label
-    Friend WithEvents txtusername As TextBox
-    Friend WithEvents btnsavechanges As Button
+    Friend WithEvents txtPhone As TextBox
+    Friend WithEvents btnRecord As Button
     Friend WithEvents grbtakeattendance As GroupBox
     Friend WithEvents txtStatus As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents membername As TextBox
+    Friend WithEvents txtMemberName As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtExpiry As TextBox
+    Friend WithEvents txtExpiryDate As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents btncancel As Button
+    Friend WithEvents btnCancel As Button
 End Class

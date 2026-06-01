@@ -121,7 +121,7 @@ Partial Class DashBoard
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.RenderMode = ToolStripRenderMode.System
         MenuStrip1.Size = New Size(153, 392)
-        MenuStrip1.TabIndex = 34
+        MenuStrip1.TabIndex = 0
         MenuStrip1.Text = "MenuStrip1"
         ' 
         ' ToolStripMenuItem4
@@ -257,7 +257,7 @@ Partial Class DashBoard
         ' AboutToolStripMenuItem
         ' 
         AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        AboutToolStripMenuItem.Size = New Size(107, 22)
+        AboutToolStripMenuItem.Size = New Size(180, 22)
         AboutToolStripMenuItem.Text = "About"
         ' 
         ' ToolStripMenuItem3
@@ -298,7 +298,7 @@ Partial Class DashBoard
         btnlogout.Location = New Point(0, 478)
         btnlogout.Name = "btnlogout"
         btnlogout.Size = New Size(150, 63)
-        btnlogout.TabIndex = 52
+        btnlogout.TabIndex = 1
         btnlogout.Text = "Logout"
         btnlogout.UseVisualStyleBackColor = False
         ' 
@@ -354,7 +354,7 @@ Partial Class DashBoard
         dgvLatestMembers.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing
         dgvLatestMembers.SelectionMode = DataGridViewSelectionMode.FullRowSelect
         dgvLatestMembers.Size = New Size(614, 294)
-        dgvLatestMembers.TabIndex = 58
+        dgvLatestMembers.TabIndex = 5
         ' 
         ' pnlCardsActive
         ' 
@@ -365,7 +365,7 @@ Partial Class DashBoard
         pnlCardsActive.Location = New Point(173, 89)
         pnlCardsActive.Name = "pnlCardsActive"
         pnlCardsActive.Size = New Size(215, 94)
-        pnlCardsActive.TabIndex = 55
+        pnlCardsActive.TabIndex = 2
         ' 
         ' Label5
         ' 
@@ -398,7 +398,7 @@ Partial Class DashBoard
         Panel2.Location = New Point(408, 89)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(213, 94)
-        Panel2.TabIndex = 58
+        Panel2.TabIndex = 3
         ' 
         ' Label6
         ' 
@@ -419,7 +419,7 @@ Partial Class DashBoard
         lblTrainersCount.Location = New Point(77, 36)
         lblTrainersCount.Name = "lblTrainersCount"
         lblTrainersCount.Size = New Size(0, 30)
-        lblTrainersCount.TabIndex = 57
+        lblTrainersCount.TabIndex = 0
         ' 
         ' Label7
         ' 
@@ -441,7 +441,7 @@ Partial Class DashBoard
         Panel3.Location = New Point(634, 89)
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(217, 94)
-        Panel3.TabIndex = 62
+        Panel3.TabIndex = 4
         ' 
         ' lblExpiredCount
         ' 

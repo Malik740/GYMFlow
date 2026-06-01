@@ -25,15 +25,15 @@ Partial Class Trainers
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         dgvTrainers = New DataGridView()
-        Label1 = New Label()
-        PictureBox1 = New PictureBox()
-        lblview = New Label()
-        Label2 = New Label()
         TrainerID = New DataGridViewTextBoxColumn()
         TrainerName = New DataGridViewTextBoxColumn()
         TrainerSpecialty = New DataGridViewTextBoxColumn()
         TrainerSalary = New DataGridViewTextBoxColumn()
-        btnclose = New Button()
+        Label1 = New Label()
+        PictureBox1 = New PictureBox()
+        lblview = New Label()
+        Label2 = New Label()
+        btnClose = New Button()
         CType(dgvTrainers, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -64,7 +64,31 @@ Partial Class Trainers
         dgvTrainers.ReadOnly = True
         dgvTrainers.RowHeadersVisible = False
         dgvTrainers.Size = New Size(629, 263)
-        dgvTrainers.TabIndex = 16
+        dgvTrainers.TabIndex = 0
+        ' 
+        ' TrainerID
+        ' 
+        TrainerID.HeaderText = "Trainer ID"
+        TrainerID.Name = "TrainerID"
+        TrainerID.ReadOnly = True
+        ' 
+        ' TrainerName
+        ' 
+        TrainerName.HeaderText = "Trainer Name"
+        TrainerName.Name = "TrainerName"
+        TrainerName.ReadOnly = True
+        ' 
+        ' TrainerSpecialty
+        ' 
+        TrainerSpecialty.HeaderText = "Specialty"
+        TrainerSpecialty.Name = "TrainerSpecialty"
+        TrainerSpecialty.ReadOnly = True
+        ' 
+        ' TrainerSalary
+        ' 
+        TrainerSalary.HeaderText = "Salary"
+        TrainerSalary.Name = "TrainerSalary"
+        TrainerSalary.ReadOnly = True
         ' 
         ' Label1
         ' 
@@ -114,43 +138,19 @@ Partial Class Trainers
         Label2.TabIndex = 43
         Label2.Text = "TRAINERS"
         ' 
-        ' TrainerID
+        ' btnClose
         ' 
-        TrainerID.HeaderText = "Trainer ID"
-        TrainerID.Name = "TrainerID"
-        TrainerID.ReadOnly = True
-        ' 
-        ' TrainerName
-        ' 
-        TrainerName.HeaderText = "Trainer Name"
-        TrainerName.Name = "TrainerName"
-        TrainerName.ReadOnly = True
-        ' 
-        ' TrainerSpecialty
-        ' 
-        TrainerSpecialty.HeaderText = "Specialty"
-        TrainerSpecialty.Name = "TrainerSpecialty"
-        TrainerSpecialty.ReadOnly = True
-        ' 
-        ' TrainerSalary
-        ' 
-        TrainerSalary.HeaderText = "Salary"
-        TrainerSalary.Name = "TrainerSalary"
-        TrainerSalary.ReadOnly = True
-        ' 
-        ' btnclose
-        ' 
-        btnclose.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        btnclose.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(219), CByte(69))
-        btnclose.FlatStyle = FlatStyle.Flat
-        btnclose.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        btnclose.ForeColor = Color.White
-        btnclose.Location = New Point(359, 369)
-        btnclose.Name = "btnclose"
-        btnclose.Size = New Size(104, 29)
-        btnclose.TabIndex = 52
-        btnclose.Text = "Close"
-        btnclose.UseVisualStyleBackColor = False
+        btnClose.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        btnClose.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(219), CByte(69))
+        btnClose.FlatStyle = FlatStyle.Flat
+        btnClose.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        btnClose.ForeColor = Color.White
+        btnClose.Location = New Point(359, 369)
+        btnClose.Name = "btnClose"
+        btnClose.Size = New Size(104, 29)
+        btnClose.TabIndex = 1
+        btnClose.Text = "Close"
+        btnClose.UseVisualStyleBackColor = False
         ' 
         ' Trainers
         ' 
@@ -159,7 +159,7 @@ Partial Class Trainers
         BackgroundImage = My.Resources.Resources.background1
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(766, 432)
-        Controls.Add(btnclose)
+        Controls.Add(btnClose)
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(PictureBox1)
@@ -182,5 +182,5 @@ Partial Class Trainers
     Friend WithEvents TrainerName As DataGridViewTextBoxColumn
     Friend WithEvents TrainerSpecialty As DataGridViewTextBoxColumn
     Friend WithEvents TrainerSalary As DataGridViewTextBoxColumn
-    Friend WithEvents btnclose As Button
+    Friend WithEvents btnClose As Button
 End Class

@@ -28,29 +28,29 @@ Partial Class AddMember
         Label1 = New Label()
         Label3 = New Label()
         grpuserinfo = New GroupBox()
-        rbfemale = New RadioButton()
-        rbmale = New RadioButton()
-        mskphone = New MaskedTextBox()
+        rbFemale = New RadioButton()
+        rbMale = New RadioButton()
+        txtPhone = New MaskedTextBox()
         lblphone = New Label()
         lblgender = New Label()
-        txtfullname = New TextBox()
+        txtFullName = New TextBox()
         lblfullname = New Label()
         GroupBox1 = New GroupBox()
-        dtpstartdate = New DateTimePicker()
-        nudweight = New NumericUpDown()
-        nudheight = New NumericUpDown()
+        cmbPlan = New ComboBox()
+        dtpStartDate = New DateTimePicker()
+        numWeight = New NumericUpDown()
+        numHeight = New NumericUpDown()
         lblsubplan = New Label()
         lblweight = New Label()
         Label5 = New Label()
         lblheight = New Label()
         btnclear = New Button()
-        btnsavemember = New Button()
-        txtSelectedPlan = New TextBox()
+        btnaddmember = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         grpuserinfo.SuspendLayout()
         GroupBox1.SuspendLayout()
-        CType(nudweight, ComponentModel.ISupportInitialize).BeginInit()
-        CType(nudheight, ComponentModel.ISupportInitialize).BeginInit()
+        CType(numWeight, ComponentModel.ISupportInitialize).BeginInit()
+        CType(numHeight, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PictureBox1
@@ -115,54 +115,54 @@ Partial Class AddMember
         ' grpuserinfo
         ' 
         grpuserinfo.BackColor = Color.Transparent
-        grpuserinfo.Controls.Add(rbfemale)
-        grpuserinfo.Controls.Add(rbmale)
-        grpuserinfo.Controls.Add(mskphone)
+        grpuserinfo.Controls.Add(rbFemale)
+        grpuserinfo.Controls.Add(rbMale)
+        grpuserinfo.Controls.Add(txtPhone)
         grpuserinfo.Controls.Add(lblphone)
         grpuserinfo.Controls.Add(lblgender)
-        grpuserinfo.Controls.Add(txtfullname)
+        grpuserinfo.Controls.Add(txtFullName)
         grpuserinfo.Controls.Add(lblfullname)
         grpuserinfo.ForeColor = Color.White
         grpuserinfo.Location = New Point(38, 100)
         grpuserinfo.Name = "grpuserinfo"
         grpuserinfo.Size = New Size(334, 220)
-        grpuserinfo.TabIndex = 17
+        grpuserinfo.TabIndex = 0
         grpuserinfo.TabStop = False
         grpuserinfo.Text = "Member Information"
         ' 
-        ' rbfemale
+        ' rbFemale
         ' 
-        rbfemale.AutoSize = True
-        rbfemale.Location = New Point(218, 129)
-        rbfemale.Name = "rbfemale"
-        rbfemale.Size = New Size(63, 19)
-        rbfemale.TabIndex = 22
-        rbfemale.Text = "Female"
-        rbfemale.UseVisualStyleBackColor = True
+        rbFemale.AutoSize = True
+        rbFemale.Location = New Point(218, 129)
+        rbFemale.Name = "rbFemale"
+        rbFemale.Size = New Size(63, 19)
+        rbFemale.TabIndex = 3
+        rbFemale.Text = "Female"
+        rbFemale.UseVisualStyleBackColor = True
         ' 
-        ' rbmale
+        ' rbMale
         ' 
-        rbmale.AutoSize = True
-        rbmale.Checked = True
-        rbmale.Location = New Point(122, 129)
-        rbmale.Name = "rbmale"
-        rbmale.Size = New Size(51, 19)
-        rbmale.TabIndex = 21
-        rbmale.TabStop = True
-        rbmale.Text = "Male"
-        rbmale.UseVisualStyleBackColor = True
+        rbMale.AutoSize = True
+        rbMale.Checked = True
+        rbMale.Location = New Point(122, 129)
+        rbMale.Name = "rbMale"
+        rbMale.Size = New Size(51, 19)
+        rbMale.TabIndex = 2
+        rbMale.TabStop = True
+        rbMale.Text = "Male"
+        rbMale.UseVisualStyleBackColor = True
         ' 
-        ' mskphone
+        ' txtPhone
         ' 
-        mskphone.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        mskphone.BorderStyle = BorderStyle.FixedSingle
-        mskphone.ForeColor = Color.White
-        mskphone.Location = New Point(122, 75)
-        mskphone.Mask = "000-000-0000"
-        mskphone.Name = "mskphone"
-        mskphone.Size = New Size(147, 23)
-        mskphone.TabIndex = 20
-        mskphone.TextAlign = HorizontalAlignment.Center
+        txtPhone.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtPhone.BorderStyle = BorderStyle.FixedSingle
+        txtPhone.ForeColor = Color.White
+        txtPhone.Location = New Point(122, 75)
+        txtPhone.Mask = "000-000-0000"
+        txtPhone.Name = "txtPhone"
+        txtPhone.Size = New Size(147, 23)
+        txtPhone.TabIndex = 1
+        txtPhone.TextAlign = HorizontalAlignment.Center
         ' 
         ' lblphone
         ' 
@@ -186,15 +186,15 @@ Partial Class AddMember
         lblgender.TabIndex = 2
         lblgender.Text = "Gender"
         ' 
-        ' txtfullname
+        ' txtFullName
         ' 
-        txtfullname.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        txtfullname.BorderStyle = BorderStyle.FixedSingle
-        txtfullname.ForeColor = Color.White
-        txtfullname.Location = New Point(122, 33)
-        txtfullname.Name = "txtfullname"
-        txtfullname.Size = New Size(147, 23)
-        txtfullname.TabIndex = 1
+        txtFullName.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtFullName.BorderStyle = BorderStyle.FixedSingle
+        txtFullName.ForeColor = Color.White
+        txtFullName.Location = New Point(122, 33)
+        txtFullName.Name = "txtFullName"
+        txtFullName.Size = New Size(147, 23)
+        txtFullName.TabIndex = 0
         ' 
         ' lblfullname
         ' 
@@ -209,10 +209,10 @@ Partial Class AddMember
         ' GroupBox1
         ' 
         GroupBox1.BackColor = Color.Transparent
-        GroupBox1.Controls.Add(txtSelectedPlan)
-        GroupBox1.Controls.Add(dtpstartdate)
-        GroupBox1.Controls.Add(nudweight)
-        GroupBox1.Controls.Add(nudheight)
+        GroupBox1.Controls.Add(cmbPlan)
+        GroupBox1.Controls.Add(dtpStartDate)
+        GroupBox1.Controls.Add(numWeight)
+        GroupBox1.Controls.Add(numHeight)
         GroupBox1.Controls.Add(lblsubplan)
         GroupBox1.Controls.Add(lblweight)
         GroupBox1.Controls.Add(Label5)
@@ -221,36 +221,47 @@ Partial Class AddMember
         GroupBox1.Location = New Point(445, 100)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(334, 220)
-        GroupBox1.TabIndex = 22
+        GroupBox1.TabIndex = 1
         GroupBox1.TabStop = False
         GroupBox1.Text = "Body indicators and subscription"
         ' 
-        ' dtpstartdate
+        ' cmbPlan
         ' 
-        dtpstartdate.Location = New Point(86, 152)
-        dtpstartdate.Name = "dtpstartdate"
-        dtpstartdate.Size = New Size(212, 23)
-        dtpstartdate.TabIndex = 24
+        cmbPlan.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        cmbPlan.FlatStyle = FlatStyle.Popup
+        cmbPlan.ForeColor = Color.White
+        cmbPlan.FormattingEnabled = True
+        cmbPlan.Location = New Point(147, 114)
+        cmbPlan.Name = "cmbPlan"
+        cmbPlan.Size = New Size(151, 23)
+        cmbPlan.TabIndex = 2
         ' 
-        ' nudweight
+        ' dtpStartDate
         ' 
-        nudweight.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        nudweight.BorderStyle = BorderStyle.FixedSingle
-        nudweight.ForeColor = Color.White
-        nudweight.Location = New Point(147, 68)
-        nudweight.Name = "nudweight"
-        nudweight.Size = New Size(151, 23)
-        nudweight.TabIndex = 22
+        dtpStartDate.Location = New Point(86, 152)
+        dtpStartDate.Name = "dtpStartDate"
+        dtpStartDate.Size = New Size(212, 23)
+        dtpStartDate.TabIndex = 3
         ' 
-        ' nudheight
+        ' numWeight
         ' 
-        nudheight.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        nudheight.BorderStyle = BorderStyle.FixedSingle
-        nudheight.ForeColor = Color.White
-        nudheight.Location = New Point(147, 28)
-        nudheight.Name = "nudheight"
-        nudheight.Size = New Size(151, 23)
-        nudheight.TabIndex = 21
+        numWeight.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        numWeight.BorderStyle = BorderStyle.FixedSingle
+        numWeight.ForeColor = Color.White
+        numWeight.Location = New Point(147, 68)
+        numWeight.Name = "numWeight"
+        numWeight.Size = New Size(151, 23)
+        numWeight.TabIndex = 1
+        ' 
+        ' numHeight
+        ' 
+        numHeight.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        numHeight.BorderStyle = BorderStyle.FixedSingle
+        numHeight.ForeColor = Color.White
+        numHeight.Location = New Point(147, 28)
+        numHeight.Name = "numHeight"
+        numHeight.Size = New Size(151, 23)
+        numHeight.TabIndex = 0
         ' 
         ' lblsubplan
         ' 
@@ -306,34 +317,23 @@ Partial Class AddMember
         btnclear.Location = New Point(252, 364)
         btnclear.Name = "btnclear"
         btnclear.Size = New Size(104, 29)
-        btnclear.TabIndex = 27
+        btnclear.TabIndex = 3
         btnclear.Text = "Clear"
         btnclear.UseVisualStyleBackColor = False
         ' 
-        ' btnsavemember
+        ' btnaddmember
         ' 
-        btnsavemember.BackColor = Color.LimeGreen
-        btnsavemember.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(219), CByte(69))
-        btnsavemember.FlatStyle = FlatStyle.Flat
-        btnsavemember.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        btnsavemember.ForeColor = Color.White
-        btnsavemember.Location = New Point(406, 364)
-        btnsavemember.Name = "btnsavemember"
-        btnsavemember.Size = New Size(132, 29)
-        btnsavemember.TabIndex = 26
-        btnsavemember.Text = "Add Member"
-        btnsavemember.UseVisualStyleBackColor = False
-        ' 
-        ' txtSelectedPlan
-        ' 
-        txtSelectedPlan.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        txtSelectedPlan.BorderStyle = BorderStyle.FixedSingle
-        txtSelectedPlan.ForeColor = Color.White
-        txtSelectedPlan.Location = New Point(147, 111)
-        txtSelectedPlan.Name = "txtSelectedPlan"
-        txtSelectedPlan.ReadOnly = True
-        txtSelectedPlan.Size = New Size(147, 23)
-        txtSelectedPlan.TabIndex = 23
+        btnaddmember.BackColor = Color.LimeGreen
+        btnaddmember.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(219), CByte(69))
+        btnaddmember.FlatStyle = FlatStyle.Flat
+        btnaddmember.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        btnaddmember.ForeColor = Color.White
+        btnaddmember.Location = New Point(406, 364)
+        btnaddmember.Name = "btnaddmember"
+        btnaddmember.Size = New Size(132, 29)
+        btnaddmember.TabIndex = 2
+        btnaddmember.Text = "Add Member"
+        btnaddmember.UseVisualStyleBackColor = False
         ' 
         ' AddMember
         ' 
@@ -343,7 +343,7 @@ Partial Class AddMember
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(800, 450)
         Controls.Add(btnclear)
-        Controls.Add(btnsavemember)
+        Controls.Add(btnaddmember)
         Controls.Add(GroupBox1)
         Controls.Add(grpuserinfo)
         Controls.Add(Label3)
@@ -359,8 +359,8 @@ Partial Class AddMember
         grpuserinfo.PerformLayout()
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
-        CType(nudweight, ComponentModel.ISupportInitialize).EndInit()
-        CType(nudheight, ComponentModel.ISupportInitialize).EndInit()
+        CType(numWeight, ComponentModel.ISupportInitialize).EndInit()
+        CType(numHeight, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -371,10 +371,10 @@ Partial Class AddMember
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents grpuserinfo As GroupBox
-    Friend WithEvents txtfullname As TextBox
+    Friend WithEvents txtFullName As TextBox
     Friend WithEvents lblfullname As Label
     Friend WithEvents lblgender As Label
-    Friend WithEvents mskphone As MaskedTextBox
+    Friend WithEvents txtPhone As MaskedTextBox
     Friend WithEvents lblphone As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents ComboBox2 As ComboBox
@@ -384,12 +384,12 @@ Partial Class AddMember
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents lblheight As Label
     Friend WithEvents lblsubplan As Label
-    Friend WithEvents dtpstartdate As DateTimePicker
-    Friend WithEvents nudweight As NumericUpDown
-    Friend WithEvents nudheight As NumericUpDown
-    Friend WithEvents rbfemale As RadioButton
-    Friend WithEvents rbmale As RadioButton
+    Friend WithEvents dtpStartDate As DateTimePicker
+    Friend WithEvents numWeight As NumericUpDown
+    Friend WithEvents numHeight As NumericUpDown
+    Friend WithEvents rbFemale As RadioButton
+    Friend WithEvents rbMale As RadioButton
     Friend WithEvents btnclear As Button
-    Friend WithEvents btnsavemember As Button
-    Friend WithEvents txtSelectedPlan As TextBox
+    Friend WithEvents btnaddmember As Button
+    Friend WithEvents cmbPlan As ComboBox
 End Class

@@ -61,7 +61,7 @@ Partial Class ChangeUser
         btnreset.Location = New Point(417, 467)
         btnreset.Name = "btnreset"
         btnreset.Size = New Size(104, 29)
-        btnreset.TabIndex = 51
+        btnreset.TabIndex = 11
         btnreset.Text = "Reset"
         btnreset.UseVisualStyleBackColor = False
         ' 
@@ -75,7 +75,7 @@ Partial Class ChangeUser
         btnsavemember.Location = New Point(571, 467)
         btnsavemember.Name = "btnsavemember"
         btnsavemember.Size = New Size(132, 29)
-        btnsavemember.TabIndex = 50
+        btnsavemember.TabIndex = 10
         btnsavemember.Text = "Save Member"
         btnsavemember.UseVisualStyleBackColor = False
         ' 
@@ -89,7 +89,7 @@ Partial Class ChangeUser
         txtnote.Name = "txtnote"
         txtnote.PlaceholderText = "Add any additional notes..."
         txtnote.Size = New Size(200, 40)
-        txtnote.TabIndex = 49
+        txtnote.TabIndex = 9
         ' 
         ' txtfee
         ' 
@@ -100,7 +100,7 @@ Partial Class ChangeUser
         txtfee.Name = "txtfee"
         txtfee.PlaceholderText = "Enter the Regetration Fee"
         txtfee.Size = New Size(200, 16)
-        txtfee.TabIndex = 48
+        txtfee.TabIndex = 8
         ' 
         ' cmbplan
         ' 
@@ -110,7 +110,7 @@ Partial Class ChangeUser
         cmbplan.Location = New Point(492, 322)
         cmbplan.Name = "cmbplan"
         cmbplan.Size = New Size(202, 23)
-        cmbplan.TabIndex = 47
+        cmbplan.TabIndex = 7
         ' 
         ' txtlocation
         ' 
@@ -121,7 +121,7 @@ Partial Class ChangeUser
         txtlocation.Name = "txtlocation"
         txtlocation.PlaceholderText = "Enter the Location"
         txtlocation.Size = New Size(200, 16)
-        txtlocation.TabIndex = 46
+        txtlocation.TabIndex = 6
         ' 
         ' txtemail
         ' 
@@ -133,7 +133,7 @@ Partial Class ChangeUser
         txtemail.Name = "txtemail"
         txtemail.PlaceholderText = "Enter the Email"
         txtemail.Size = New Size(200, 16)
-        txtemail.TabIndex = 45
+        txtemail.TabIndex = 5
         ' 
         ' mskphone
         ' 
@@ -144,7 +144,7 @@ Partial Class ChangeUser
         mskphone.Mask = "000-000-0000"
         mskphone.Name = "mskphone"
         mskphone.Size = New Size(202, 16)
-        mskphone.TabIndex = 44
+        mskphone.TabIndex = 4
         mskphone.TextAlign = HorizontalAlignment.Center
         ' 
         ' dtpBirthDate
@@ -157,7 +157,7 @@ Partial Class ChangeUser
         dtpBirthDate.Location = New Point(494, 174)
         dtpBirthDate.Name = "dtpBirthDate"
         dtpBirthDate.Size = New Size(200, 23)
-        dtpBirthDate.TabIndex = 43
+        dtpBirthDate.TabIndex = 3
         ' 
         ' Label5
         ' 
@@ -168,7 +168,7 @@ Partial Class ChangeUser
         Label5.Location = New Point(633, 140)
         Label5.Name = "Label5"
         Label5.Size = New Size(59, 20)
-        Label5.TabIndex = 42
+        Label5.TabIndex = 2
         Label5.Text = "Female"
         ' 
         ' Label4
@@ -180,7 +180,7 @@ Partial Class ChangeUser
         Label4.Location = New Point(516, 140)
         Label4.Name = "Label4"
         Label4.Size = New Size(42, 19)
-        Label4.TabIndex = 41
+        Label4.TabIndex = 1
         Label4.Text = "Male"
         ' 
         ' rdbfemale
@@ -221,7 +221,7 @@ Partial Class ChangeUser
         txtfullname.Name = "txtfullname"
         txtfullname.PlaceholderText = "Enter full name"
         txtfullname.Size = New Size(198, 23)
-        txtfullname.TabIndex = 38
+        txtfullname.TabIndex = 0
         ' 
         ' lblnote
         ' 
@@ -367,7 +367,7 @@ Partial Class ChangeUser
         Label1.TabIndex = 26
         Label1.Text = "Change User "
         ' 
-        ' Form3
+        ' ChangeUser
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
@@ -400,7 +400,7 @@ Partial Class ChangeUser
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(Label1)
-        Name = "Form3"
+        Name = "ChangeUser"
         Text = "Form3"
         ResumeLayout(False)
         PerformLayout()

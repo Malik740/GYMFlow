@@ -73,7 +73,7 @@ Partial Class DeleteUser
         txtusername.Location = New Point(244, 172)
         txtusername.Name = "txtusername"
         txtusername.Size = New Size(128, 23)
-        txtusername.TabIndex = 3
+        txtusername.TabIndex = 0
         ' 
         ' lblusername
         ' 
@@ -96,7 +96,7 @@ Partial Class DeleteUser
         btndelete.Location = New Point(276, 246)
         btndelete.Name = "btndelete"
         btndelete.Size = New Size(96, 33)
-        btndelete.TabIndex = 7
+        btndelete.TabIndex = 1
         btndelete.Text = "Delete"
         btndelete.UseVisualStyleBackColor = False
         ' 
@@ -110,7 +110,7 @@ Partial Class DeleteUser
         btncancel.Location = New Point(143, 246)
         btncancel.Name = "btncancel"
         btncancel.Size = New Size(96, 33)
-        btncancel.TabIndex = 8
+        btncancel.TabIndex = 2
         btncancel.Text = "Cancel"
         btncancel.UseVisualStyleBackColor = False
         ' 

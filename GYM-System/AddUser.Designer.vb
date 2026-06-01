@@ -68,7 +68,7 @@ Partial Class AddUser
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Segoe UI", 20F, FontStyle.Bold)
         Label2.ForeColor = Color.LimeGreen
-        Label2.Location = New Point(530, 21)
+        Label2.Location = New Point(519, 21)
         Label2.Name = "Label2"
         Label2.Size = New Size(120, 37)
         Label2.TabIndex = 1
@@ -204,7 +204,7 @@ Partial Class AddUser
         txtfullname.Name = "txtfullname"
         txtfullname.PlaceholderText = "Enter full name"
         txtfullname.Size = New Size(198, 23)
-        txtfullname.TabIndex = 12
+        txtfullname.TabIndex = 0
         ' 
         ' rdbmale
         ' 
@@ -230,7 +230,7 @@ Partial Class AddUser
         rdbfemale.Location = New Point(627, 140)
         rdbfemale.Name = "rdbfemale"
         rdbfemale.Size = New Size(81, 25)
-        rdbfemale.TabIndex = 14
+        rdbfemale.TabIndex = 2
         rdbfemale.TextAlign = ContentAlignment.MiddleCenter
         rdbfemale.UseVisualStyleBackColor = False
         ' 
@@ -242,7 +242,7 @@ Partial Class AddUser
         Label4.Location = New Point(532, 141)
         Label4.Name = "Label4"
         Label4.Size = New Size(42, 19)
-        Label4.TabIndex = 15
+        Label4.TabIndex = 1
         Label4.Text = "Male"
         ' 
         ' Label5
@@ -253,7 +253,7 @@ Partial Class AddUser
         Label5.Location = New Point(649, 141)
         Label5.Name = "Label5"
         Label5.Size = New Size(59, 20)
-        Label5.TabIndex = 16
+        Label5.TabIndex = 2
         Label5.Text = "Female"
         ' 
         ' dtpBirthDate
@@ -266,7 +266,7 @@ Partial Class AddUser
         dtpBirthDate.Location = New Point(510, 175)
         dtpBirthDate.Name = "dtpBirthDate"
         dtpBirthDate.Size = New Size(200, 23)
-        dtpBirthDate.TabIndex = 17
+        dtpBirthDate.TabIndex = 3
         ' 
         ' mskphone
         ' 
@@ -277,7 +277,7 @@ Partial Class AddUser
         mskphone.Mask = "000-000-0000"
         mskphone.Name = "mskphone"
         mskphone.Size = New Size(202, 16)
-        mskphone.TabIndex = 18
+        mskphone.TabIndex = 4
         mskphone.TextAlign = HorizontalAlignment.Center
         ' 
         ' txtemail
@@ -289,7 +289,7 @@ Partial Class AddUser
         txtemail.Name = "txtemail"
         txtemail.PlaceholderText = "Enter the Email"
         txtemail.Size = New Size(200, 16)
-        txtemail.TabIndex = 19
+        txtemail.TabIndex = 5
         ' 
         ' txtlocation
         ' 
@@ -300,7 +300,7 @@ Partial Class AddUser
         txtlocation.Name = "txtlocation"
         txtlocation.PlaceholderText = "Enter the Location"
         txtlocation.Size = New Size(200, 16)
-        txtlocation.TabIndex = 20
+        txtlocation.TabIndex = 6
         ' 
         ' cmbplan
         ' 
@@ -310,7 +310,7 @@ Partial Class AddUser
         cmbplan.Location = New Point(508, 323)
         cmbplan.Name = "cmbplan"
         cmbplan.Size = New Size(202, 23)
-        cmbplan.TabIndex = 21
+        cmbplan.TabIndex = 7
         ' 
         ' txtfee
         ' 
@@ -321,7 +321,7 @@ Partial Class AddUser
         txtfee.Name = "txtfee"
         txtfee.PlaceholderText = "Enter the Regetration Fee"
         txtfee.Size = New Size(200, 16)
-        txtfee.TabIndex = 22
+        txtfee.TabIndex = 8
         ' 
         ' txtnote
         ' 
@@ -333,7 +333,7 @@ Partial Class AddUser
         txtnote.Name = "txtnote"
         txtnote.PlaceholderText = "Add any additional notes..."
         txtnote.Size = New Size(200, 40)
-        txtnote.TabIndex = 23
+        txtnote.TabIndex = 9
         ' 
         ' btnsavemember
         ' 
@@ -345,7 +345,7 @@ Partial Class AddUser
         btnsavemember.Location = New Point(587, 468)
         btnsavemember.Name = "btnsavemember"
         btnsavemember.Size = New Size(132, 29)
-        btnsavemember.TabIndex = 24
+        btnsavemember.TabIndex = 10
         btnsavemember.Text = "Save Member"
         btnsavemember.UseVisualStyleBackColor = False
         ' 
@@ -359,7 +359,7 @@ Partial Class AddUser
         btnreset.Location = New Point(433, 468)
         btnreset.Name = "btnreset"
         btnreset.Size = New Size(104, 29)
-        btnreset.TabIndex = 25
+        btnreset.TabIndex = 11
         btnreset.Text = "Reset"
         btnreset.UseVisualStyleBackColor = False
         ' 
