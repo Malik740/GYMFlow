@@ -48,7 +48,7 @@ Partial Class Login
         grblog.Location = New Point(57, 71)
         grblog.Name = "grblog"
         grblog.Size = New Size(261, 243)
-        grblog.TabIndex = 1
+        grblog.TabIndex = 0
         grblog.TabStop = False
         grblog.Text = "login"
         ' 
@@ -62,7 +62,7 @@ Partial Class Login
         btnforgetpass.Location = New Point(21, 170)
         btnforgetpass.Name = "btnforgetpass"
         btnforgetpass.Size = New Size(121, 29)
-        btnforgetpass.TabIndex = 29
+        btnforgetpass.TabIndex = 3
         btnforgetpass.Text = "Forget Password?"
         btnforgetpass.UseVisualStyleBackColor = False
         ' 
@@ -76,7 +76,7 @@ Partial Class Login
         btnlogin.Location = New Point(148, 170)
         btnlogin.Name = "btnlogin"
         btnlogin.Size = New Size(89, 29)
-        btnlogin.TabIndex = 28
+        btnlogin.TabIndex = 2
         btnlogin.Text = "Login"
         btnlogin.UseVisualStyleBackColor = False
         ' 
@@ -89,7 +89,7 @@ Partial Class Login
         txtpassword.PasswordChar = "*"c
         txtpassword.PlaceholderText = "Password"
         txtpassword.Size = New Size(140, 23)
-        txtpassword.TabIndex = 3
+        txtpassword.TabIndex = 1
         ' 
         ' txtusername
         ' 
@@ -100,7 +100,7 @@ Partial Class Login
         txtusername.Name = "txtusername"
         txtusername.PlaceholderText = "Username"
         txtusername.Size = New Size(140, 23)
-        txtusername.TabIndex = 2
+        txtusername.TabIndex = 0
         ' 
         ' lblpass
         ' 

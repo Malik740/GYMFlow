@@ -60,7 +60,7 @@ Partial Class ForgetPassword
         txtconfnew.Name = "txtconfnew"
         txtconfnew.PasswordChar = "*"c
         txtconfnew.Size = New Size(153, 23)
-        txtconfnew.TabIndex = 5
+        txtconfnew.TabIndex = 2
         ' 
         ' txtnewpass
         ' 
@@ -71,7 +71,7 @@ Partial Class ForgetPassword
         txtnewpass.Name = "txtnewpass"
         txtnewpass.PasswordChar = "*"c
         txtnewpass.Size = New Size(153, 23)
-        txtnewpass.TabIndex = 4
+        txtnewpass.TabIndex = 1
         ' 
         ' txtusername
         ' 
@@ -81,7 +81,7 @@ Partial Class ForgetPassword
         txtusername.Location = New Point(185, 38)
         txtusername.Name = "txtusername"
         txtusername.Size = New Size(153, 23)
-        txtusername.TabIndex = 3
+        txtusername.TabIndex = 0
         ' 
         ' lblconfnew
         ' 
@@ -120,7 +120,7 @@ Partial Class ForgetPassword
         btncancel.Location = New Point(48, 283)
         btncancel.Name = "btncancel"
         btncancel.Size = New Size(104, 29)
-        btncancel.TabIndex = 27
+        btncancel.TabIndex = 1
         btncancel.Text = "Cancel"
         btncancel.UseVisualStyleBackColor = False
         ' 
@@ -134,7 +134,7 @@ Partial Class ForgetPassword
         btnsave.Location = New Point(202, 283)
         btnsave.Name = "btnsave"
         btnsave.Size = New Size(132, 29)
-        btnsave.TabIndex = 26
+        btnsave.TabIndex = 0
         btnsave.Text = "Save"
         btnsave.UseVisualStyleBackColor = False
         ' 

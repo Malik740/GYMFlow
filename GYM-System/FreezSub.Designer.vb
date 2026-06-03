@@ -26,30 +26,30 @@ Partial Class FreezSub
         PictureBox1 = New PictureBox()
         Label2 = New Label()
         lblview = New Label()
-        btnsearch = New Button()
-        txtusername = New TextBox()
+        btnSearch = New Button()
+        txtSearch = New TextBox()
         lblusername = New Label()
-        btnconfirmfreez = New Button()
-        btncancel = New Button()
+        btnCancel = New Button()
         grbfreezdetails = New GroupBox()
-        txtnewenddate = New TextBox()
-        dtpfreezstart = New DateTimePicker()
-        nudweight = New NumericUpDown()
+        txtNewEndDate = New TextBox()
+        dtpFreezeStart = New DateTimePicker()
+        numFreezeDays = New NumericUpDown()
         lblfreezdays = New Label()
         Label5 = New Label()
         lblfreezstartdate = New Label()
         grbcurrentinfo = New GroupBox()
-        txtenddate = New TextBox()
+        txtEndDate = New TextBox()
         Label4 = New Label()
-        txtcurrentplan = New TextBox()
+        txtCurrentPlan = New TextBox()
         Label3 = New Label()
         txtID = New TextBox()
         lblID = New Label()
-        txtfullname = New TextBox()
+        txtFullName = New TextBox()
         lblfullname = New Label()
+        btnConfirm = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         grbfreezdetails.SuspendLayout()
-        CType(nudweight, ComponentModel.ISupportInitialize).BeginInit()
+        CType(numFreezeDays, ComponentModel.ISupportInitialize).BeginInit()
         grbcurrentinfo.SuspendLayout()
         SuspendLayout()
         ' 
@@ -101,31 +101,31 @@ Partial Class FreezSub
         lblview.TabIndex = 32
         lblview.Text = "FREEZE"
         ' 
-        ' btnsearch
+        ' btnSearch
         ' 
-        btnsearch.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        btnsearch.BackgroundImageLayout = ImageLayout.Center
-        btnsearch.FlatAppearance.BorderColor = Color.Lime
-        btnsearch.FlatAppearance.MouseDownBackColor = Color.Green
-        btnsearch.FlatAppearance.MouseOverBackColor = Color.Green
-        btnsearch.FlatStyle = FlatStyle.Flat
-        btnsearch.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        btnsearch.ForeColor = Color.White
-        btnsearch.Location = New Point(640, 79)
-        btnsearch.Name = "btnsearch"
-        btnsearch.Size = New Size(90, 23)
-        btnsearch.TabIndex = 46
-        btnsearch.Text = "Search"
-        btnsearch.UseVisualStyleBackColor = False
+        btnSearch.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        btnSearch.BackgroundImageLayout = ImageLayout.Center
+        btnSearch.FlatAppearance.BorderColor = Color.Lime
+        btnSearch.FlatAppearance.MouseDownBackColor = Color.Green
+        btnSearch.FlatAppearance.MouseOverBackColor = Color.Green
+        btnSearch.FlatStyle = FlatStyle.Flat
+        btnSearch.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        btnSearch.ForeColor = Color.White
+        btnSearch.Location = New Point(640, 79)
+        btnSearch.Name = "btnSearch"
+        btnSearch.Size = New Size(90, 23)
+        btnSearch.TabIndex = 1
+        btnSearch.Text = "Search"
+        btnSearch.UseVisualStyleBackColor = False
         ' 
-        ' txtusername
+        ' txtSearch
         ' 
-        txtusername.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        txtusername.ForeColor = SystemColors.Info
-        txtusername.Location = New Point(399, 79)
-        txtusername.Name = "txtusername"
-        txtusername.Size = New Size(201, 23)
-        txtusername.TabIndex = 45
+        txtSearch.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtSearch.ForeColor = SystemColors.Info
+        txtSearch.Location = New Point(399, 79)
+        txtSearch.Name = "txtSearch"
+        txtSearch.Size = New Size(201, 23)
+        txtSearch.TabIndex = 0
         ' 
         ' lblusername
         ' 
@@ -139,40 +139,26 @@ Partial Class FreezSub
         lblusername.TabIndex = 44
         lblusername.Text = "Enter Member UserName"
         ' 
-        ' btnconfirmfreez
+        ' btnCancel
         ' 
-        btnconfirmfreez.BackColor = Color.LimeGreen
-        btnconfirmfreez.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(219), CByte(69))
-        btnconfirmfreez.FlatStyle = FlatStyle.Flat
-        btnconfirmfreez.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        btnconfirmfreez.ForeColor = Color.White
-        btnconfirmfreez.Location = New Point(405, 395)
-        btnconfirmfreez.Name = "btnconfirmfreez"
-        btnconfirmfreez.Size = New Size(140, 29)
-        btnconfirmfreez.TabIndex = 42
-        btnconfirmfreez.Text = "Confirm Freeze"
-        btnconfirmfreez.UseVisualStyleBackColor = False
-        ' 
-        ' btncancel
-        ' 
-        btncancel.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        btncancel.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(219), CByte(69))
-        btncancel.FlatStyle = FlatStyle.Flat
-        btncancel.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        btncancel.ForeColor = Color.White
-        btncancel.Location = New Point(251, 395)
-        btncancel.Name = "btncancel"
-        btncancel.Size = New Size(104, 29)
-        btncancel.TabIndex = 43
-        btncancel.Text = "Cancel"
-        btncancel.UseVisualStyleBackColor = False
+        btnCancel.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        btnCancel.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(219), CByte(69))
+        btnCancel.FlatStyle = FlatStyle.Flat
+        btnCancel.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        btnCancel.ForeColor = Color.White
+        btnCancel.Location = New Point(251, 395)
+        btnCancel.Name = "btnCancel"
+        btnCancel.Size = New Size(104, 29)
+        btnCancel.TabIndex = 5
+        btnCancel.Text = "Cancel"
+        btnCancel.UseVisualStyleBackColor = False
         ' 
         ' grbfreezdetails
         ' 
         grbfreezdetails.BackColor = Color.Transparent
-        grbfreezdetails.Controls.Add(txtnewenddate)
-        grbfreezdetails.Controls.Add(dtpfreezstart)
-        grbfreezdetails.Controls.Add(nudweight)
+        grbfreezdetails.Controls.Add(txtNewEndDate)
+        grbfreezdetails.Controls.Add(dtpFreezeStart)
+        grbfreezdetails.Controls.Add(numFreezeDays)
         grbfreezdetails.Controls.Add(lblfreezdays)
         grbfreezdetails.Controls.Add(Label5)
         grbfreezdetails.Controls.Add(lblfreezstartdate)
@@ -180,37 +166,38 @@ Partial Class FreezSub
         grbfreezdetails.Location = New Point(429, 131)
         grbfreezdetails.Name = "grbfreezdetails"
         grbfreezdetails.Size = New Size(359, 220)
-        grbfreezdetails.TabIndex = 41
+        grbfreezdetails.TabIndex = 3
         grbfreezdetails.TabStop = False
         grbfreezdetails.Text = "Subscription freeze details"
         ' 
-        ' txtnewenddate
+        ' txtNewEndDate
         ' 
-        txtnewenddate.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        txtnewenddate.BorderStyle = BorderStyle.FixedSingle
-        txtnewenddate.ForeColor = Color.White
-        txtnewenddate.Location = New Point(116, 127)
-        txtnewenddate.Name = "txtnewenddate"
-        txtnewenddate.ReadOnly = True
-        txtnewenddate.Size = New Size(212, 23)
-        txtnewenddate.TabIndex = 29
+        txtNewEndDate.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtNewEndDate.BorderStyle = BorderStyle.FixedSingle
+        txtNewEndDate.ForeColor = Color.White
+        txtNewEndDate.Location = New Point(116, 127)
+        txtNewEndDate.Name = "txtNewEndDate"
+        txtNewEndDate.ReadOnly = True
+        txtNewEndDate.Size = New Size(212, 23)
+        txtNewEndDate.TabIndex = 2
         ' 
-        ' dtpfreezstart
+        ' dtpFreezeStart
         ' 
-        dtpfreezstart.Location = New Point(116, 30)
-        dtpfreezstart.Name = "dtpfreezstart"
-        dtpfreezstart.Size = New Size(212, 23)
-        dtpfreezstart.TabIndex = 25
+        dtpFreezeStart.Location = New Point(116, 30)
+        dtpFreezeStart.Name = "dtpFreezeStart"
+        dtpFreezeStart.Size = New Size(212, 23)
+        dtpFreezeStart.TabIndex = 0
         ' 
-        ' nudweight
+        ' numFreezeDays
         ' 
-        nudweight.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        nudweight.BorderStyle = BorderStyle.FixedSingle
-        nudweight.ForeColor = Color.White
-        nudweight.Location = New Point(116, 68)
-        nudweight.Name = "nudweight"
-        nudweight.Size = New Size(212, 23)
-        nudweight.TabIndex = 22
+        numFreezeDays.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        numFreezeDays.BorderStyle = BorderStyle.FixedSingle
+        numFreezeDays.ForeColor = Color.White
+        numFreezeDays.Location = New Point(116, 68)
+        numFreezeDays.Maximum = New Decimal(New Integer() {90, 0, 0, 0})
+        numFreezeDays.Name = "numFreezeDays"
+        numFreezeDays.Size = New Size(212, 23)
+        numFreezeDays.TabIndex = 1
         ' 
         ' lblfreezdays
         ' 
@@ -247,32 +234,32 @@ Partial Class FreezSub
         ' grbcurrentinfo
         ' 
         grbcurrentinfo.BackColor = Color.Transparent
-        grbcurrentinfo.Controls.Add(txtenddate)
+        grbcurrentinfo.Controls.Add(txtEndDate)
         grbcurrentinfo.Controls.Add(Label4)
-        grbcurrentinfo.Controls.Add(txtcurrentplan)
+        grbcurrentinfo.Controls.Add(txtCurrentPlan)
         grbcurrentinfo.Controls.Add(Label3)
         grbcurrentinfo.Controls.Add(txtID)
         grbcurrentinfo.Controls.Add(lblID)
-        grbcurrentinfo.Controls.Add(txtfullname)
+        grbcurrentinfo.Controls.Add(txtFullName)
         grbcurrentinfo.Controls.Add(lblfullname)
         grbcurrentinfo.ForeColor = Color.White
         grbcurrentinfo.Location = New Point(37, 131)
         grbcurrentinfo.Name = "grbcurrentinfo"
         grbcurrentinfo.Size = New Size(334, 220)
-        grbcurrentinfo.TabIndex = 40
+        grbcurrentinfo.TabIndex = 2
         grbcurrentinfo.TabStop = False
         grbcurrentinfo.Text = "Current subscriber information"
         ' 
-        ' txtenddate
+        ' txtEndDate
         ' 
-        txtenddate.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        txtenddate.BorderStyle = BorderStyle.FixedSingle
-        txtenddate.ForeColor = Color.White
-        txtenddate.Location = New Point(119, 169)
-        txtenddate.Name = "txtenddate"
-        txtenddate.ReadOnly = True
-        txtenddate.Size = New Size(147, 23)
-        txtenddate.TabIndex = 28
+        txtEndDate.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtEndDate.BorderStyle = BorderStyle.FixedSingle
+        txtEndDate.ForeColor = Color.White
+        txtEndDate.Location = New Point(119, 169)
+        txtEndDate.Name = "txtEndDate"
+        txtEndDate.ReadOnly = True
+        txtEndDate.Size = New Size(147, 23)
+        txtEndDate.TabIndex = 3
         ' 
         ' Label4
         ' 
@@ -284,16 +271,16 @@ Partial Class FreezSub
         Label4.TabIndex = 27
         Label4.Text = "End Date"
         ' 
-        ' txtcurrentplan
+        ' txtCurrentPlan
         ' 
-        txtcurrentplan.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        txtcurrentplan.BorderStyle = BorderStyle.FixedSingle
-        txtcurrentplan.ForeColor = Color.White
-        txtcurrentplan.Location = New Point(119, 122)
-        txtcurrentplan.Name = "txtcurrentplan"
-        txtcurrentplan.ReadOnly = True
-        txtcurrentplan.Size = New Size(147, 23)
-        txtcurrentplan.TabIndex = 26
+        txtCurrentPlan.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtCurrentPlan.BorderStyle = BorderStyle.FixedSingle
+        txtCurrentPlan.ForeColor = Color.White
+        txtCurrentPlan.Location = New Point(119, 122)
+        txtCurrentPlan.Name = "txtCurrentPlan"
+        txtCurrentPlan.ReadOnly = True
+        txtCurrentPlan.Size = New Size(147, 23)
+        txtCurrentPlan.TabIndex = 2
         ' 
         ' Label3
         ' 
@@ -314,7 +301,7 @@ Partial Class FreezSub
         txtID.Name = "txtID"
         txtID.ReadOnly = True
         txtID.Size = New Size(147, 23)
-        txtID.TabIndex = 24
+        txtID.TabIndex = 0
         ' 
         ' lblID
         ' 
@@ -326,16 +313,16 @@ Partial Class FreezSub
         lblID.TabIndex = 23
         lblID.Text = "ID"
         ' 
-        ' txtfullname
+        ' txtFullName
         ' 
-        txtfullname.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        txtfullname.BorderStyle = BorderStyle.FixedSingle
-        txtfullname.ForeColor = Color.White
-        txtfullname.Location = New Point(119, 73)
-        txtfullname.Name = "txtfullname"
-        txtfullname.ReadOnly = True
-        txtfullname.Size = New Size(147, 23)
-        txtfullname.TabIndex = 1
+        txtFullName.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtFullName.BorderStyle = BorderStyle.FixedSingle
+        txtFullName.ForeColor = Color.White
+        txtFullName.Location = New Point(119, 73)
+        txtFullName.Name = "txtFullName"
+        txtFullName.ReadOnly = True
+        txtFullName.Size = New Size(147, 23)
+        txtFullName.TabIndex = 1
         ' 
         ' lblfullname
         ' 
@@ -347,6 +334,20 @@ Partial Class FreezSub
         lblfullname.TabIndex = 0
         lblfullname.Text = "Full Name"
         ' 
+        ' btnConfirm
+        ' 
+        btnConfirm.BackColor = Color.Lime
+        btnConfirm.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(219), CByte(69))
+        btnConfirm.FlatStyle = FlatStyle.Flat
+        btnConfirm.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        btnConfirm.ForeColor = Color.White
+        btnConfirm.Location = New Point(399, 395)
+        btnConfirm.Name = "btnConfirm"
+        btnConfirm.Size = New Size(146, 29)
+        btnConfirm.TabIndex = 4
+        btnConfirm.Text = "Confirm Freez"
+        btnConfirm.UseVisualStyleBackColor = False
+        ' 
         ' FreezSub
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -354,11 +355,11 @@ Partial Class FreezSub
         BackgroundImage = My.Resources.Resources.background1
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(800, 450)
-        Controls.Add(btnsearch)
-        Controls.Add(txtusername)
+        Controls.Add(btnConfirm)
+        Controls.Add(btnSearch)
+        Controls.Add(txtSearch)
         Controls.Add(lblusername)
-        Controls.Add(btnconfirmfreez)
-        Controls.Add(btncancel)
+        Controls.Add(btnCancel)
         Controls.Add(grbfreezdetails)
         Controls.Add(grbcurrentinfo)
         Controls.Add(Label1)
@@ -371,7 +372,7 @@ Partial Class FreezSub
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         grbfreezdetails.ResumeLayout(False)
         grbfreezdetails.PerformLayout()
-        CType(nudweight, ComponentModel.ISupportInitialize).EndInit()
+        CType(numFreezeDays, ComponentModel.ISupportInitialize).EndInit()
         grbcurrentinfo.ResumeLayout(False)
         grbcurrentinfo.PerformLayout()
         ResumeLayout(False)
@@ -382,30 +383,30 @@ Partial Class FreezSub
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label2 As Label
     Friend WithEvents lblview As Label
-    Friend WithEvents btnsearch As Button
-    Friend WithEvents txtusername As TextBox
+    Friend WithEvents btnSearch As Button
+    Friend WithEvents txtSearch As TextBox
     Friend WithEvents lblusername As Label
-    Private btnconfirmfreez As Button
     Friend WithEvents btnsavechanges As Button
-    Friend WithEvents btncancel As Button
+    Friend WithEvents btnCancel As Button
     Friend WithEvents grbfreezdetails As GroupBox
     Friend WithEvents dtpstartdate As DateTimePicker
     Friend WithEvents cmbsubplan As ComboBox
-    Friend WithEvents nudweight As NumericUpDown
+    Friend WithEvents numFreezeDays As NumericUpDown
     Friend WithEvents nudheight As NumericUpDown
     Friend WithEvents lblsubplan As Label
     Friend WithEvents lblfreezdays As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents lblfreezstartdate As Label
     Friend WithEvents grbcurrentinfo As GroupBox
-    Friend WithEvents txtenddate As TextBox
+    Friend WithEvents txtEndDate As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents txtcurrentplan As TextBox
+    Friend WithEvents txtCurrentPlan As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents txtID As TextBox
     Friend WithEvents lblID As Label
-    Friend WithEvents txtfullname As TextBox
+    Friend WithEvents txtFullName As TextBox
     Friend WithEvents lblfullname As Label
-    Friend WithEvents dtpfreezstart As DateTimePicker
-    Friend WithEvents txtnewenddate As TextBox
+    Friend WithEvents dtpFreezeStart As DateTimePicker
+    Friend WithEvents txtNewEndDate As TextBox
+    Friend WithEvents btnConfirm As Button
 End Class

@@ -2,58 +2,63 @@
 
 Public Class DashBoard
     Private Sub addnewusertool_Click(sender As Object, e As EventArgs) Handles addnewusertool.Click
-        AddUser.Show()
-
+        Dim frm As New AddUser()
+        frm.ShowDialog()
     End Sub
 
     Private Sub changeuserinfotool_Click(sender As Object, e As EventArgs) Handles changeuserinfotool.Click
-        ChangeUser.Show()
-
+        Dim frm As New ChangeUser()
+        frm.ShowDialog()
     End Sub
 
     Private Sub DeleteUserToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeleteUserToolStripMenuItem.Click
-        DeleteUser.Show()
-
+        Dim frm As New DeleteUser()
+        frm.ShowDialog()
     End Sub
 
     Private Sub ViewMemberToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ViewMemberToolStripMenuItem.Click
-        ViewMember.Show()
-
+        Dim frm As New ViewMember()
+        frm.ShowDialog()
     End Sub
 
     Private Sub AddMemberToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddMemberToolStripMenuItem.Click
-        AddMember.Show()
-
+        Dim frm As New AddMember()
+        frm.ShowDialog()
     End Sub
 
     Private Sub EditMemberToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditMemberToolStripMenuItem.Click
-        EditMember.Show()
-
+        Dim frm As New EditMember()
+        frm.ShowDialog()
     End Sub
 
     Private Sub FreezSubscriptionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FreezSubscriptionToolStripMenuItem.Click
-        FreezSub.Show()
-
+        Dim frm As New FreezSub()
+        frm.ShowDialog()
     End Sub
 
     Private Sub ViewProductsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ViewProductsToolStripMenuItem.Click
-        Product.Show()
+        Dim frm As New Product()
+        frm.ShowDialog()
     End Sub
 
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-        About.Show()
+        Dim frm As New About()
+        frm.ShowDialog()
     End Sub
 
     Private Sub TakeAttendanceToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TakeAttendanceToolStripMenuItem.Click
-        Attendance.Show()
+        Dim frm As New Attendance()
+        frm.ShowDialog()
     End Sub
 
     Private Sub PlansToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles PlansToolStripMenuItem1.Click
-        MembershipPlans.Show()
+        Dim frm As New MembershipPlans()
+        frm.ShowDialog()
     End Sub
 
     Private Sub ViewTrainersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ViewTrainersToolStripMenuItem.Click
-        Trainers.Show()
+        Dim frm As New Trainers()
+        frm.ShowDialog()
     End Sub
 
     Private Sub btnlogout_Click(sender As Object, e As EventArgs) Handles btnlogout.Click
@@ -62,7 +67,6 @@ Public Class DashBoard
             If result = DialogResult.Yes Then
                 Login.Show()
                 Me.Close()
-
             End If
         Catch ex As Exception
             MsgBox("Error during logout: " & ex.Message, MsgBoxStyle.Critical, "System Error")
@@ -111,5 +115,4 @@ Public Class DashBoard
             CloseConnection()
         End Try
     End Sub
-
 End Class

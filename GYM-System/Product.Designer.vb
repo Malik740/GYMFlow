@@ -83,7 +83,7 @@ Partial Class Product
         GroupBox1.Location = New Point(21, 31)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(221, 107)
-        GroupBox1.TabIndex = 4
+        GroupBox1.TabIndex = 0
         GroupBox1.TabStop = False
         GroupBox1.Text = "caesar salad"
         ' 
@@ -115,7 +115,7 @@ Partial Class Product
         GroupBox2.Location = New Point(333, 31)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Size = New Size(221, 107)
-        GroupBox2.TabIndex = 6
+        GroupBox2.TabIndex = 1
         GroupBox2.TabStop = False
         GroupBox2.Text = "chicken wrap"
         ' 
@@ -176,7 +176,7 @@ Partial Class Product
         GroupBox3.Location = New Point(21, 171)
         GroupBox3.Name = "GroupBox3"
         GroupBox3.Size = New Size(221, 107)
-        GroupBox3.TabIndex = 7
+        GroupBox3.TabIndex = 2
         GroupBox3.TabStop = False
         GroupBox3.Text = "Chicken and rice"
         ' 
@@ -199,7 +199,7 @@ Partial Class Product
         GroupBox4.Location = New Point(333, 171)
         GroupBox4.Name = "GroupBox4"
         GroupBox4.Size = New Size(221, 107)
-        GroupBox4.TabIndex = 8
+        GroupBox4.TabIndex = 3
         GroupBox4.TabStop = False
         GroupBox4.Text = "Tuna sandwich"
         ' 
@@ -241,7 +241,7 @@ Partial Class Product
         GroupBox5.Location = New Point(27, 318)
         GroupBox5.Name = "GroupBox5"
         GroupBox5.Size = New Size(221, 107)
-        GroupBox5.TabIndex = 8
+        GroupBox5.TabIndex = 4
         GroupBox5.TabStop = False
         GroupBox5.Text = "Meat sandwich"
         ' 
@@ -283,7 +283,7 @@ Partial Class Product
         GroupBox6.Location = New Point(333, 318)
         GroupBox6.Name = "GroupBox6"
         GroupBox6.Size = New Size(221, 107)
-        GroupBox6.TabIndex = 8
+        GroupBox6.TabIndex = 5
         GroupBox6.TabStop = False
         GroupBox6.Text = "Egg sandwich"
         ' 
@@ -324,7 +324,7 @@ Partial Class Product
         btnDashbord.Location = New Point(589, 405)
         btnDashbord.Name = "btnDashbord"
         btnDashbord.Size = New Size(95, 33)
-        btnDashbord.TabIndex = 9
+        btnDashbord.TabIndex = 6
         btnDashbord.Text = "DahBorad"
         btnDashbord.UseVisualStyleBackColor = False
         ' 
@@ -337,7 +337,7 @@ Partial Class Product
         btnExit.Location = New Point(693, 405)
         btnExit.Name = "btnExit"
         btnExit.Size = New Size(95, 33)
-        btnExit.TabIndex = 10
+        btnExit.TabIndex = 7
         btnExit.Text = "Exit"
         btnExit.UseVisualStyleBackColor = False
         ' 

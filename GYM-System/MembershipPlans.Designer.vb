@@ -22,8 +22,8 @@ Partial Class MembershipPlans
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Label1 = New Label()
         PictureBox1 = New PictureBox()
         Label2 = New Label()
@@ -34,7 +34,7 @@ Partial Class MembershipPlans
         durationplan = New DataGridViewTextBoxColumn()
         planprice = New DataGridViewTextBoxColumn()
         action = New DataGridViewButtonColumn()
-        btnclose = New Button()
+        btnClose = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(dgvPlans, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -91,19 +91,19 @@ Partial Class MembershipPlans
         ' 
         dgvPlans.AllowUserToAddRows = False
         dgvPlans.AllowUserToDeleteRows = False
-        DataGridViewCellStyle3.BackColor = Color.FromArgb(CByte(25), CByte(25), CByte(25))
-        DataGridViewCellStyle3.ForeColor = Color.White
-        dgvPlans.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.BackColor = Color.FromArgb(CByte(25), CByte(25), CByte(25))
+        DataGridViewCellStyle1.ForeColor = Color.White
+        dgvPlans.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         dgvPlans.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvPlans.BackgroundColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        DataGridViewCellStyle4.Font = New Font("Sitka Banner", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        DataGridViewCellStyle4.ForeColor = Color.Lime
-        DataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.True
-        dgvPlans.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        DataGridViewCellStyle2.Font = New Font("Sitka Banner", 9.749999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle2.ForeColor = Color.Lime
+        DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        dgvPlans.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         dgvPlans.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvPlans.Columns.AddRange(New DataGridViewColumn() {PlanID, PlanName, durationplan, planprice, action})
         dgvPlans.EnableHeadersVisualStyles = False
@@ -113,7 +113,7 @@ Partial Class MembershipPlans
         dgvPlans.ReadOnly = True
         dgvPlans.RowHeadersVisible = False
         dgvPlans.Size = New Size(688, 229)
-        dgvPlans.TabIndex = 40
+        dgvPlans.TabIndex = 0
         ' 
         ' PlanID
         ' 
@@ -145,19 +145,19 @@ Partial Class MembershipPlans
         action.Name = "action"
         action.ReadOnly = True
         ' 
-        ' btnclose
+        ' btnClose
         ' 
-        btnclose.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        btnclose.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(219), CByte(69))
-        btnclose.FlatStyle = FlatStyle.Flat
-        btnclose.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        btnclose.ForeColor = Color.White
-        btnclose.Location = New Point(357, 358)
-        btnclose.Name = "btnclose"
-        btnclose.Size = New Size(104, 29)
-        btnclose.TabIndex = 53
-        btnclose.Text = "Close"
-        btnclose.UseVisualStyleBackColor = False
+        btnClose.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        btnClose.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(219), CByte(69))
+        btnClose.FlatStyle = FlatStyle.Flat
+        btnClose.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        btnClose.ForeColor = Color.White
+        btnClose.Location = New Point(357, 358)
+        btnClose.Name = "btnClose"
+        btnClose.Size = New Size(104, 29)
+        btnClose.TabIndex = 1
+        btnClose.Text = "Close"
+        btnClose.UseVisualStyleBackColor = False
         ' 
         ' MembershipPlans
         ' 
@@ -166,7 +166,7 @@ Partial Class MembershipPlans
         BackgroundImage = My.Resources.Resources.background1
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(800, 422)
-        Controls.Add(btnclose)
+        Controls.Add(btnClose)
         Controls.Add(dgvPlans)
         Controls.Add(Label1)
         Controls.Add(PictureBox1)
@@ -190,5 +190,5 @@ Partial Class MembershipPlans
     Friend WithEvents durationplan As DataGridViewTextBoxColumn
     Friend WithEvents planprice As DataGridViewTextBoxColumn
     Friend WithEvents action As DataGridViewButtonColumn
-    Friend WithEvents btnclose As Button
+    Friend WithEvents btnClose As Button
 End Class
