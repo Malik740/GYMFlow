@@ -111,7 +111,7 @@ Partial Class DeleteUser
         btncancel.Name = "btncancel"
         btncancel.Size = New Size(96, 33)
         btncancel.TabIndex = 2
-        btncancel.Text = "Cancel"
+        btncancel.Text = "Close"
         btncancel.UseVisualStyleBackColor = False
         ' 
         ' DeleteUser

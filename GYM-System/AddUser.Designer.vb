@@ -44,7 +44,7 @@ Partial Class AddUser
         txtemail = New TextBox()
         txtlocation = New TextBox()
         cmbplan = New ComboBox()
-        txtfee = New TextBox()
+        txtsal = New TextBox()
         txtnote = New TextBox()
         btnsavemember = New Button()
         btnreset = New Button()
@@ -312,16 +312,16 @@ Partial Class AddUser
         cmbplan.Size = New Size(202, 23)
         cmbplan.TabIndex = 7
         ' 
-        ' txtfee
+        ' txtsal
         ' 
-        txtfee.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        txtfee.BorderStyle = BorderStyle.None
-        txtfee.ForeColor = SystemColors.Info
-        txtfee.Location = New Point(508, 372)
-        txtfee.Name = "txtfee"
-        txtfee.PlaceholderText = "Enter the Regetration Fee"
-        txtfee.Size = New Size(200, 16)
-        txtfee.TabIndex = 8
+        txtsal.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        txtsal.BorderStyle = BorderStyle.None
+        txtsal.ForeColor = SystemColors.Info
+        txtsal.Location = New Point(508, 372)
+        txtsal.Name = "txtsal"
+        txtsal.PlaceholderText = "Enter the Regetration Fee"
+        txtsal.Size = New Size(200, 16)
+        txtsal.TabIndex = 8
         ' 
         ' txtnote
         ' 
@@ -373,7 +373,7 @@ Partial Class AddUser
         Controls.Add(btnreset)
         Controls.Add(btnsavemember)
         Controls.Add(txtnote)
-        Controls.Add(txtfee)
+        Controls.Add(txtsal)
         Controls.Add(cmbplan)
         Controls.Add(txtlocation)
         Controls.Add(txtemail)
@@ -427,7 +427,7 @@ Partial Class AddUser
     Friend WithEvents txtemail As TextBox
     Friend WithEvents txtlocation As TextBox
     Friend WithEvents cmbplan As ComboBox
-    Friend WithEvents txtfee As TextBox
+    Friend WithEvents txtsal As TextBox
     Friend WithEvents txtnote As TextBox
     Friend WithEvents btnsavemember As Button
     Friend WithEvents btnreset As Button
