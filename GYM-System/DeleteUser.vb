@@ -1,4 +1,6 @@
-﻿Public Class DeleteUser
+﻿Imports System.Data.SqlClient
+
+Public Class DeleteUser
     Private Sub btndelete_Click(sender As Object, e As EventArgs) Handles btndelete.Click
         Dim input As String = txtusername.Text
         If String.IsNullOrEmpty(input) Then
@@ -7,7 +9,6 @@
         End If
         Dim confermation As DialogResult = MessageBox.Show("Are you sure you want to delete the user '" & input & "'?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
         If confermation = DialogResult.Yes Then
-            ' Add code to delete the user from the database here
             MessageBox.Show("User deleted successfully.")
         End If
         Dim deleteQuery As String = "DELETE FROM users WHERE Fullname = @Fullname"
@@ -32,5 +33,9 @@
     Private Sub btncancel_Click(sender As Object, e As EventArgs) Handles btncancel.Click
         txtusername.Clear()
         Me.Close()
+    End Sub
+
+    Private Sub DeleteUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

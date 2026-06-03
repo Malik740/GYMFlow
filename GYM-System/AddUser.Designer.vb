@@ -306,6 +306,7 @@ Partial Class AddUser
         ' 
         cmbplan.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         cmbplan.FlatStyle = FlatStyle.Flat
+        cmbplan.ForeColor = Color.White
         cmbplan.FormattingEnabled = True
         cmbplan.Location = New Point(508, 323)
         cmbplan.Name = "cmbplan"

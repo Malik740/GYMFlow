@@ -49,6 +49,7 @@ Partial Class ChangeUser
         Label3 = New Label()
         Label2 = New Label()
         Label1 = New Label()
+        btnSearch = New Button()
         SuspendLayout()
         ' 
         ' btnreset
@@ -106,6 +107,7 @@ Partial Class ChangeUser
         ' 
         cmbplan.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         cmbplan.FlatStyle = FlatStyle.Flat
+        cmbplan.ForeColor = Color.White
         cmbplan.FormattingEnabled = True
         cmbplan.Location = New Point(492, 322)
         cmbplan.Name = "cmbplan"
@@ -367,6 +369,20 @@ Partial Class ChangeUser
         Label1.TabIndex = 26
         Label1.Text = "Change User "
         ' 
+        ' btnSearch
+        ' 
+        btnSearch.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        btnSearch.FlatAppearance.BorderColor = Color.FromArgb(CByte(32), CByte(219), CByte(69))
+        btnSearch.FlatStyle = FlatStyle.Flat
+        btnSearch.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        btnSearch.ForeColor = Color.White
+        btnSearch.Location = New Point(715, 95)
+        btnSearch.Name = "btnSearch"
+        btnSearch.Size = New Size(73, 29)
+        btnSearch.TabIndex = 41
+        btnSearch.Text = "Search"
+        btnSearch.UseVisualStyleBackColor = False
+        ' 
         ' ChangeUser
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -374,6 +390,7 @@ Partial Class ChangeUser
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(800, 514)
+        Controls.Add(btnSearch)
         Controls.Add(btnreset)
         Controls.Add(btnsavemember)
         Controls.Add(txtnote)
@@ -432,4 +449,5 @@ Partial Class ChangeUser
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents btnSearch As Button
 End Class

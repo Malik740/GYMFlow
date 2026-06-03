@@ -38,7 +38,7 @@ Public Class Login
             CloseConnection()
 
             If ds.Tables("sysUsers").Rows.Count > 0 Then
-                MsgBox("Login Successful, Welcome " & username & "!", MsgBoxStyle.Information, "Success")
+
 
                 loginAttempts = 0
 
@@ -62,6 +62,10 @@ Public Class Login
         Finally
             CloseConnection()
         End Try
+
+    End Sub
+
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class
