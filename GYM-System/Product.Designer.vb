@@ -238,7 +238,7 @@ Partial Class Product
         GroupBox5.Controls.Add(Label5)
         GroupBox5.Controls.Add(PictureBox4)
         GroupBox5.ForeColor = Color.LimeGreen
-        GroupBox5.Location = New Point(27, 331)
+        GroupBox5.Location = New Point(27, 318)
         GroupBox5.Name = "GroupBox5"
         GroupBox5.Size = New Size(221, 107)
         GroupBox5.TabIndex = 8
@@ -280,7 +280,7 @@ Partial Class Product
         GroupBox6.Controls.Add(Label6)
         GroupBox6.Controls.Add(PictureBox6)
         GroupBox6.ForeColor = Color.LimeGreen
-        GroupBox6.Location = New Point(333, 331)
+        GroupBox6.Location = New Point(333, 318)
         GroupBox6.Name = "GroupBox6"
         GroupBox6.Size = New Size(221, 107)
         GroupBox6.TabIndex = 8
@@ -318,6 +318,7 @@ Partial Class Product
         ' btnDashbord
         ' 
         btnDashbord.BackColor = Color.LimeGreen
+        btnDashbord.FlatAppearance.BorderColor = Color.Lime
         btnDashbord.FlatStyle = FlatStyle.Flat
         btnDashbord.ForeColor = SystemColors.ControlLightLight
         btnDashbord.Location = New Point(589, 405)
@@ -329,7 +330,8 @@ Partial Class Product
         ' 
         ' btnExit
         ' 
-        btnExit.BackColor = Color.Transparent
+        btnExit.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        btnExit.FlatAppearance.BorderColor = Color.Lime
         btnExit.FlatStyle = FlatStyle.Flat
         btnExit.ForeColor = SystemColors.ControlLightLight
         btnExit.Location = New Point(693, 405)
