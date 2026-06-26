@@ -1,8 +1,8 @@
 # GymFlow - Gym Management System
 
 GymFlow is a desktop-based gym management system developed using VB.NET and SQL Server.  
-The system is designed to help gym employees manage daily operations efficiently through a simple and modern interface.
-
+The system is designed to help gym employees manage daily operations efficiently through a simple and modern interface.  
+[CI](https://github.com/Malik740/GYMFlow/actions/runs/28240684064)
 ---
 
 ## Features
