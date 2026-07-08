@@ -19,6 +19,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Install Vale
+        run: choco install vale.portable --yes
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
@@ -40,6 +43,9 @@ jobs:
 
       - name: Lint (verify formatting)
         run: dotnet format --verify-no-changes
+
+      - name: Run Vale on docs
+        run: vale docs/
 
       - name: Run tests
         run: dotnet test --no-build --configuration Release
