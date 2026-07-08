@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install Vale
-        run: choco install vale.portable --yes
+        run: choco install vale.portable --yes --pre
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
