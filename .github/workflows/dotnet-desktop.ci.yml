@@ -48,3 +48,5 @@ jobs:
 
       - name: Run tests
         run: dotnet test --no-build --configuration Release
+      - name: mkdocs
+        run: mkdocs gh-deploy
