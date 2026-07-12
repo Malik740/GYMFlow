@@ -42,7 +42,11 @@ jobs:
         run: dotnet format --verify-no-changes
 
       - name: Install Vale
-        run: choco install vale.portable --yes
+        shell: pwsh
+        run: |
+            Invoke-WebRequest -Uri "https://github.com/errata-ai/vale/releases/download/v3.7.1/vale_3.7.1_Windows_64-bit.zip" -OutFile "vale.zip"
+            Expand-Archive -Path "vale.zip" -DestinationPath "vale"
+            echo "$PWD\vale" | Out-File -FilePath $env:GITHUB_PATH -Append
 
       - name: Run Vale
         run: vale docs/
