@@ -8,6 +8,7 @@ on:
 
 jobs:
   build:
+   
     runs-on: windows-latest
 
     strategy:
@@ -19,7 +20,7 @@ jobs:
         uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608
 
       - name: Setup .NET
-        uses: actions/setup-dotnet@3a4f6e1fbbd0c8f1d9df94b3cbef5b3f8b6f5c16
+        uses: actions/setup-dotnet@v3
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
 
